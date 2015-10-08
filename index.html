@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Ranks and Rates App</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700|Coda' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/navy-font.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<div class="nav-question nav" style="display:none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" id="back-question" class="btn btn-secondary">Back</a>
+				</div>
+				<div class="col-md-6 text-center progress-area">
+					<span class="progress-current">1</span><span class="progress-of">of</span><span class="progress-total">10</span>
+					<div class="progress-dots text-center">
+						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+					</div>
+				</div>
+				<div class="col-md-3 score text-right">
+					<h2 class="score-current">0</h2>
+					<h3 class="score-new">+500</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-scoreboard nav" style="display:none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" id="back-scoreboard" class="btn btn-secondary">Back</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-settings nav" style="display:none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#" id="back-settings" class="btn btn-secondary">Back</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-reference nav" style="display:none;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" id="back-reference" class="btn btn-secondary">Back</a>
+					<div class="switch" style="display:none;">
+						<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+						<label for="cmn-toggle-1">Ranks</label>
+					</div>
+					<div class="select-arrow icon-chevron-down">
+						<select id="filter-type">
+							<option value="all">Officers & Enlisted</option>
+							<option value="Officer">Officers Only</option>
+							<option value="Enlisted">Enlisted Only</option>
+						</select>
+					</div>
+					<div class="select-arrow icon-chevron-down">
+						<select id="filter-branch">
+							<option value="all">All Branches</option>
+							<option value="Navy">Navy Only</option>
+							<option value="Marines">Marines Only</option>
+							<option value="Air Force">Air Force Only</option>
+							<option value="Army">Army Only</option>
+						</select>
+					</div>
+					<input type="text" class="reference-filter" placeholder="Type to filter">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container intro box animated fadeIn">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="intro-box box-inner">
+					<div class="box-title text-center">
+						<h1>World of Ranks</h1>
+						<span class="eyebrow">NAVAL EDUCATION TRAINING COMMAND</span>
+					</div>
+					<div class="box-content">
+						<ul class="list-unstyled text-center">
+							<li><a href="" class="btn btn-primary btn-block" data-to="question">Play</a></li>
+							<li><a href="" class="btn btn-primary btn-block" data-to="reference">Reference</a></li>
+							<li><a href="" class="btn btn-primary btn-block" data-to="scoreboard">Scoreboard</a></li>
+							<li><a href="" class="btn btn-primary btn-block" data-to="settings">Settings</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container question box" style="display:none;">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="question-box box-inner">
+					<div class="box-title text-center" style="position:relative;">
+						<span class="eyebrow">Identify The <span class="question-rank-branch"></span></span>
+						<h2 class="question-rank-title question-text" style="opacity:0;"></h2>
+						<input type="text" id="dial" />
+					</div>
+					<div class="box-content">
+						<div class="container-fluid">
+							<div class="row options">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reference" style="display:none;">
+		<div class="reference-field">
+			
+		</div>
+	</div>
+
+	<div class="container scoreboard box" style="display:none;">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="scoreboard-box box-inner">
+					<div class="box-title text-center">
+						<h1>Scoreboard</h1>
+					</div>
+					<div class="box-content">
+						
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-8">
+									<span class="eyebrow text-center">High Score</span>
+									<h1 id="scoreboard-high" class="text-center"></h1>
+									<span class="underbrow text-center" id="scoreboard-high-date"></span>
+
+								</div>
+								<div class="col-xs-4">
+									<h3>Top Scores</h3>
+									<table id="scoreboard-table">
+
+									</table>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container settings box" style="display:none;">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="settings-box box-inner">
+					<div class="box-title text-center">
+						<h1>Settings</h1>
+					</div>
+					<div class="box-content">
+						
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-8 col-xs-offset-2">
+									<p class="text-center"><em>Increase your high score to unlock new difficulty levels!</em></p><br>
+									<a href="#" class="btn btn-primary btn-difficulty setDifficulty" data-set-difficulty="1">Easy<span class="btn-sub btn-sub-enabled">Navy Officer &amp; Enlisted</span></a>
+
+									<a href="#" class="btn btn-primary btn-difficulty " data-set-difficulty="2">Medium<span class="btn-sub btn-sub-enabled">Navy Plus Marines Officer &amp; Enlisted</span><span class="btn-sub btn-sub-disabled">Unlocked at 5,000 points</span></a>
+
+									<a href="#" class="btn btn-primary btn-difficulty" data-set-difficulty="3">Hard<span class="btn-sub btn-sub-enabled">All Branches Officer &amp; Enlisted</span><span class="btn-sub btn-sub-disabled">Unlocked at 9,000 points</span></a>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="response">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<span class="eyebrow"><span class="responseText"></span> this is the</span>
+					<h3 class="modal-title question-rank-title">Petty Officer 2nd Class</h3>
+				</div>
+				<div class="modal-body text-center response-images">
+					
+				</div>
+				<div class="modal-footer text-center">
+					<a href="#" class="btn btn-primary btn-continue" data-dismiss="modal">Continue</a>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="complete">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h2>CONGRATULATIONS</h2>
+					<span class="eyebrow">You earned</span>
+					<h1 class="modal-title final-score"></h1>
+					<span class="underbrow">Points</span>
+				</div>
+				<div class="modal-footer text-center">
+					<a href="#" class="btn btn-primary" id="back-complete" data-dismiss="modal">Main Menu</a>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="reference-detail">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body text-center">
+					<div class="reference-detail-images">
+
+					</div>
+					<div class="reference-detail-meta">
+						<span class="reference-detail-branch"></span>
+						<span class="reference-detail-type"></span>
+						<h3 class="reference-detail-title"></h3>
+					</div>
+					<a href="#" class="modal-close icon-close" data-dismiss="modal"></a>
+				</div>
+				<div class="modal-footer">
+					
+					<div class="reference-detail-description"></div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	
+	
+	       
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/jsonselect.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

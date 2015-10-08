@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bah.navyflashapp"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Rates and Ranks</name>
+
+    <description>
+        Tool created by NETC to aid recruits with distinguishing rates and ranks.
+    </description>
+
+    <author href="http://www.boozallen.com" email="cronin_jonathan@bah.com">
+        NETC - Naval Education Training Command
+    </author>
+
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="landscape" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+</widget>
