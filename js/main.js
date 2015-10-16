@@ -225,8 +225,8 @@ $(document).ready(function(){
 
 			var newRank=$('<a href="#" class="reference-rank type-'+this.type+' branch-'+this.branch+'" data-id="'+this.id+'">'+
 				'<img src="img/'+imgURL+'.png" class="img-responsive">'+
-				'<span class="reference-rank-meta reference-rank-meta-branch">'+this.branch+'</span>'+
-				'<span class="reference-rank-meta reference-rank-meta-type">'+this.type+'</span>'+
+				'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
+				'<span class="reference-rank-meta reference-rank-meta-type">'+this.type+'<br><span class="reference-rank-meta-grade">'+this.grade+'</span></span>'+
 				'<div class="reference-rank-title">'+
 					this.title+
 				'</div>'+
@@ -240,6 +240,7 @@ $(document).ready(function(){
 			$('.reference-detail-title').text(rank.title);
 			$('.reference-detail-branch').text(rank.branch);
 			$('.reference-detail-type').text(rank.type);
+			$('.reference-detail-grade').text(rank.grade);
 			$('.reference-detail-description').text(rank.description);
 
 			//emtpy image field in refernce detail modal
