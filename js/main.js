@@ -490,7 +490,7 @@ $(document).ready(function(){
 
 		//click actions for options
 		$('.options a').click(function(){
-
+			
 			//set correct/incorrect response text
 			var responseText='<span class="text-incorrect">Incorrect</span>';
 
