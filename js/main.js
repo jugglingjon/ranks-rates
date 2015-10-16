@@ -557,7 +557,8 @@ $(document).ready(function(){
 
 	//screen destinations from home
 	$('.intro .intro-box .box-content a').click(function(){
-		var toTarget=$(this).attr('data-to');
+		alert('clicked');
+		var toTarget=$(this).atftr('data-to');
 		$('.intro').animateOut('fadeOut',function(){
 			$('.nav-'+toTarget).animateIn('fadeInDown');
 			$('.'+toTarget).animateIn('fadeInDown',function(){
