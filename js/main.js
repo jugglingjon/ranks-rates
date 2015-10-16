@@ -490,7 +490,7 @@ $(document).ready(function(){
 
 		//click actions for options
 		$('.options a').click(function(){
-
+			
 			//set correct/incorrect response text
 			var responseText='<span class="text-incorrect">Incorrect</span>';
 
@@ -557,8 +557,7 @@ $(document).ready(function(){
 
 	//screen destinations from home
 	$('.intro .intro-box .box-content a').click(function(){
-		alert('clicked');
-		var toTarget=$(this).atftr('data-to');
+		var toTarget=$(this).attr('data-to');
 		$('.intro').animateOut('fadeOut',function(){
 			$('.nav-'+toTarget).animateIn('fadeInDown');
 			$('.'+toTarget).animateIn('fadeInDown',function(){
