@@ -18,6 +18,7 @@
     </author>
 
     <icon src="icon.png" />
+    <gap:splash src="splash.png" />
 
     <preference name="permissions" value="none" />
     <preference name="orientation" value="landscape" />
