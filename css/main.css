@@ -331,7 +331,7 @@ canvas {
 .settings .scoreboard-box,
 .scoreboard .settings-box,
 .settings .settings-box {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .scoreboard .scoreboard-box .box-title,
 .settings .scoreboard-box .box-title,
