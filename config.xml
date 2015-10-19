@@ -17,7 +17,7 @@
         NETC - Naval Education Training Command
     </author>
 
-    <icon src="icon.png">
+    <icon src="icon.png" />
 
     <preference name="permissions" value="none" />
     <preference name="orientation" value="landscape" />
