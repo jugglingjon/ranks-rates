@@ -520,6 +520,9 @@ canvas {
   position: absolute;
   right: 12px;
 }
+#reference-detail .modal-dialog {
+  margin-top: 150px;
+}
 #reference-detail .modal-content {
   background-color: #282828;
 }
@@ -549,6 +552,20 @@ canvas {
   border: 0;
   text-align: left;
   margin: 0;
+}
+#reference-detail .modal-content .modal-footer .reference-detail-meta {
+  margin-top: 0px;
+  text-align: left;
+}
+#reference-detail .modal-content .modal-footer .reference-detail-meta span {
+  margin-right: 20px;
+}
+#reference-detail .modal-content .modal-footer h3 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+#reference-detail .modal-content .modal-footer .reference-detail-description {
+  display: none;
 }
 .switch {
   display: inline-block;
