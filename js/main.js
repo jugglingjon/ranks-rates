@@ -288,6 +288,55 @@ $(document).ready(function(){
 		});
 		
 	});
+
+	//load ranks from json file, populate reference field
+	$.getJSON('js/ratings.json',function(data){
+
+
+		//populate ranks field
+		$.each(data,function(index){
+			this.id=index;
+
+			var imgURL;
+
+			imgURL=this.branch+'/'+this.abbreviation+'.png';
+
+
+			var newRating=$('<a href="#" class="reference-rating type-rating branch-'+this.branch+'" data-id="'+this.id+'">'+
+				'<img src="img/'+imgURL+'" class="img-responsive">'+
+				'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
+				'<div class="reference-rank-title">'+
+					this.title+
+				'</div>'+
+			'</a>').appendTo('.reference-field');
+		});
+
+		$('.reference-field').isotope({
+			filter:'.reference-rank'
+		});
+
+
+		//click action to open modal
+		$('.reference-rating').click(function(){
+			var rating=data[$(this).attr('data-id')];
+
+			$('.reference-detail-title').text(rating.title);
+			$('.reference-detail-branch').text(rating.branch);
+			$('.reference-detail-description').text(rating.description);
+
+			//emtpy image field in refernce detail modal
+			$('.reference-detail-images').empty();
+
+			//insert images into modal
+			var newInsignia=$('<div><img src="img/'+rating.branch+'/'+rating.abbreviation+'.png" class="img-responsive"><span class="insignia-tag">Rating</span></div>');
+			newInsignia.appendTo('.reference-detail-images');				
+
+			//open modal
+			$('#reference-detail').modal();
+			return false;
+		});
+		
+	});
 	
 	//change isotope field basedon filter settings
 	function updateFilter(){
@@ -295,22 +344,37 @@ $(document).ready(function(){
 		var selectbox=$('select');
 		var branch=$('#filter-branch');
 		var type=$('#filter-type');
-
+		var rating=$('#rating-toggle').is(':checked');
+		console.log(rating);
 		//isotope filtering
 		$('.reference-field').isotope({
 			filter:function(){
 				var allTrue=true;
 				
-				if(type.val()!='all' && !$(this).hasClass('type-'+type.val())){
-					allTrue=false;
+				if(rating==true && $(this).hasClass('reference-rating')){
+					return allTrue;
 				}
+				else{
 
-				if(branch.val()!='all' && !$(this).hasClass('branch-'+branch.val())){
-					allTrue=false;
-				}
+					if(type.val()!='all' && !$(this).hasClass('type-'+type.val())){
+						allTrue=false;
+					}
 
-				if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
-					allTrue=false;
+					if(branch.val()!='all' && !$(this).hasClass('branch-'+branch.val())){
+						allTrue=false;
+					}
+
+					if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
+						allTrue=false;
+					}
+
+					if(rating==true && $(this).hasClass('reference-rank')){
+						allTrue=false;
+					}
+
+					if(rating!=true && $(this).hasClass('reference-rating')){
+						allTrue=false;
+					}
 				}
 
 				return allTrue;
@@ -320,6 +384,19 @@ $(document).ready(function(){
 
 	$('select').change(function(){
 		updateFilter();
+	});
+
+	$('input[type=checkbox]').change(function(){
+		if($(this).is(':checked')){
+			$('select').parent().css('opacity','.5');
+			$('select').prop('disabled','disabled');
+		}
+		else{
+			$('select').parent().css('opacity','1');
+			$('select').prop('disabled',false);
+		}		
+		updateFilter();
+
 	});
 
 	$('input[type=text]').keyup(function(){

@@ -416,7 +416,8 @@ canvas {
   padding: 20px;
   margin-top: 80px;
 }
-.reference .reference-field .reference-rank {
+.reference .reference-field .reference-rank,
+.reference .reference-field .reference-rating {
   width: 218px;
   height: 200px;
   position: relative;
@@ -426,40 +427,49 @@ canvas {
   background: rgba(39, 39, 39, 0.94);
   box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.5);
 }
-.reference .reference-field .reference-rank .reference-rank-meta {
+.reference .reference-field .reference-rank .reference-rank-meta,
+.reference .reference-field .reference-rating .reference-rank-meta {
   position: absolute;
   color: white;
   text-transform: uppercase;
   font-size: 13px;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch,
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-branch {
   left: 10px;
   top: 10px;
   padding: 3px 6px;
   border-radius: 3px;
   opacity: 1;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Navy"] {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Navy"],
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Navy"] {
   background-color: #004070;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Marines"] {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Marines"],
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Marines"] {
   background-color: #BF2F38;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Air Force"] {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Air Force"],
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Air Force"] {
   background-color: #272A74;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Army"] {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Army"],
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-branch[data-branch-label="Army"] {
   background-color: #304D39;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-type {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-type,
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-type {
   right: 10px;
   top: 10px;
   text-align: right;
 }
-.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-type .reference-rank-meta-grade {
+.reference .reference-field .reference-rank .reference-rank-meta.reference-rank-meta-type .reference-rank-meta-grade,
+.reference .reference-field .reference-rating .reference-rank-meta.reference-rank-meta-type .reference-rank-meta-grade {
   opacity: .6;
 }
-.reference .reference-field .reference-rank img {
+.reference .reference-field .reference-rank img,
+.reference .reference-field .reference-rating img {
   max-height: 110px;
   max-width: 110px;
   top: 50%;
@@ -470,7 +480,12 @@ canvas {
   margin-top: -7px;
   left: 50%;
 }
-.reference .reference-field .reference-rank .reference-rank-title {
+.reference .reference-field .reference-rank.reference-rating img,
+.reference .reference-field .reference-rating.reference-rating img {
+  max-width: 150px;
+}
+.reference .reference-field .reference-rank .reference-rank-title,
+.reference .reference-field .reference-rating .reference-rank-title {
   background: #1C1C1C;
   position: absolute;
   left: 0;
