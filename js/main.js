@@ -352,7 +352,9 @@ $(document).ready(function(){
 				var allTrue=true;
 				
 				if(rating==true && $(this).hasClass('reference-rating')){
-					return allTrue;
+					if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
+						allTrue=false;
+					}
 				}
 				else{
 
