@@ -350,7 +350,7 @@ $(document).ready(function(){
 		$('.reference-field').isotope({
 			filter:function(){
 				var allTrue=true;
-				
+				//if ratings mode, only consider text search
 				if(rating==true && $(this).hasClass('reference-rating')){
 					if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
 						allTrue=false;
