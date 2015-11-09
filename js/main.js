@@ -340,6 +340,7 @@ $(document).ready(function(){
 	
 	//change isotope field basedon filter settings
 	function updateFilter(){
+		$('.loader').animateIn('fadeIn');
 		var textbox=$('input[type=text]');
 		var selectbox=$('select');
 		var branch=$('#filter-branch');
@@ -381,6 +382,9 @@ $(document).ready(function(){
 
 				return allTrue;
 			}
+		});
+		$('.reference-field').one( 'arrangeComplete', function() {
+			$('.loader').animateOut('fadeOut');
 		});
 	}
 
