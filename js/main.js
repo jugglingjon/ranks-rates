@@ -527,7 +527,7 @@ $(document).ready(function(){
 		updateProgress();
 
 		//clear options
-		$('.options .col-xs-3').remove();
+		$('.options a').remove();
 
 		//get random unique rank, that hasn't been previously shown
 		var questionRank=getUniqueRank();
@@ -565,9 +565,7 @@ $(document).ready(function(){
 			if (this.correct){
 				correctString='data-correct="true"';
 			}
-			var newOption=$('<div class="col-xs-3">'+
-					'<a href="#" '+correctString+' style="display:none;"><img src="img/'+this.branch+'/'+this.abbreviation+'-'+insignia+'.png" alt="" class="img-responsive"></a>'+
-				'</div>');
+			var newOption=$('<a href="#" '+correctString+' style="display:none;"><img src="img/'+this.branch+'/'+this.abbreviation+'-'+insignia+'.png" alt="" class="img-responsive"></a>');
 			newOption.appendTo('.options');
 		});
 
