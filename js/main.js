@@ -692,7 +692,7 @@ $(document).ready(function(){
 	//load new set on continue
 	$('#response .btn-continue').click(function(){
 		$('.question-text').css('opacity','0');
-		$('.options a').cascadeOut('fadeOutDown',function(){
+		$($('.options a').get().reverse()).cascadeOut('fadeOutDown',function(){
 			//if game incomplete, ask another question
 			if(rankHistory.length<10){
 				loadQuestion();
