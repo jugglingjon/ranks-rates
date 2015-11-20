@@ -459,31 +459,37 @@ $(document).ready(function(){
 	//checks conflicts object, returns presence of conflict
 	function conflictExists(questionRank,distractor,insignia){
 
-		//console.log(questionRank,distractor,insignia);
-		if(conflicts[questionRank.branch]){
+		if(questionRank.type!=distractor.type){
+			return true;
+		}
+		else{
+			//console.log(questionRank,distractor,insignia);
+			if(conflicts[questionRank.branch]){
 
-			if(conflicts[questionRank.branch][distractor.branch]){
-				if(conflicts[questionRank.branch][distractor.branch][questionRank.type]){
-					
-					if(conflicts[questionRank.branch][distractor.branch][questionRank.type].indexOf(insignia)==-1){
-						return false;
+				if(conflicts[questionRank.branch][distractor.branch]){
+					if(conflicts[questionRank.branch][distractor.branch][questionRank.type]){
+						
+						if(conflicts[questionRank.branch][distractor.branch][questionRank.type].indexOf(insignia)==-1){
+							return false;
+						}
+						else{
+							return true;
+						}
 					}
 					else{
-						return true;
+						return false;
 					}
 				}
 				else{
 					return false;
 				}
+				
 			}
 			else{
 				return false;
 			}
-			
 		}
-		else{
-			return false;
-		}
+
 			
 	}
 
