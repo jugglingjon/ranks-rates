@@ -215,25 +215,6 @@
         ]
     },
     {
-        "title": "Chief Warrant Officer 1",
-        "grade": "W-1",
-        "abbreviation": "SWO1",
-        "branch": "Navy",
-        "type": "Officer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
-        "quiz": [
-            "Collar",
-            "Sleeve",
-            "Shoulder"
-        ],
-        "referenceShared": [
-            {
-                "title": "Cover",
-                "image": "Warrant-cover-shared"
-            }
-        ]
-    },
-    {
         "title": "Chief Warrant Officer 2",
         "grade": "W-2",
         "abbreviation": "SWO2",
