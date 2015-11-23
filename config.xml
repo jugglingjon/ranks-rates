@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Rank and Reference</name>
+    <name>Ratings and Reference</name>
 
     <description>
-        Tool created by NETC to aid recruits with distinguishing rates and ranks.
+        Tool created by NETC to aid recruits with distinguishing naval ratings.
     </description>
 
     <author href="http://www.boozallen.com" email="cronin_jonathan@bah.com">

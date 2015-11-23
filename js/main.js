@@ -197,7 +197,7 @@ $(document).ready(function(){
 	$('#dial').parent().hide();
 
 	//load ranks from json file, populate reference field
-	$.getJSON('js/rates.json',function(data){
+	$.getJSON('js/ratings.json',function(data){
 
 		
 
@@ -213,20 +213,11 @@ $(document).ready(function(){
 			this.id=index;
 
 			var imgURL;
-			if(this.quiz){
-				imgURL=this.branch+'/'+this.abbreviation+'-'+this.quiz[0];
-			}
-			else if(this.reference){
-				imgURL=this.branch+'/'+this.abbreviation+'-'+this.reference[0];
-			}
-			else{
-				imgURL='blank';
-			}
+			imgURL=this.branch+'/'+this.abbreviation;
 
-			var newRank=$('<a href="#" class="reference-rank type-'+this.type+' branch-'+this.branch+'" data-id="'+this.id+'">'+
+			var newRank=$('<a href="#" class="reference-rank branch-'+this.branch+'" data-id="'+this.id+'">'+
 				'<img src="img/'+imgURL+'.png" class="img-responsive">'+
 				'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
-				'<span class="reference-rank-meta reference-rank-meta-type">'+this.type+'<br><span class="reference-rank-meta-grade">'+this.grade+'</span></span>'+
 				'<div class="reference-rank-title">'+
 					this.title+
 				'</div>'+
@@ -239,48 +230,14 @@ $(document).ready(function(){
 
 			$('.reference-detail-title').text(rank.title);
 			$('.reference-detail-branch').text(rank.branch);
-			$('.reference-detail-type').text(rank.type);
-			$('.reference-detail-grade').text(rank.grade);
 			$('.reference-detail-description').text(rank.description);
 
 			//emtpy image field in refernce detail modal
 			$('.reference-detail-images').empty();
-
 			
-
-
-			if(rank.quiz||rank.reference){
-				//merge quiz and reference insignia arrays (if available)
-				var quizPlusReference;
-				if(rank.quiz&&rank.reference){
-					quizPlusReference=$.merge([],rank.quiz);
-					$.merge(quizPlusReference,rank.reference);
-				}	
-				else if(rank.quiz){
-					quizPlusReference=rank.quiz;
-				}
-				else{
-					quizPlusReference=rank.reference;
-				}
-
-				//insert images into modal
-				$.each(quizPlusReference, function(){
-					var newInsignia=$('<div><img src="img/'+rank.branch+'/'+rank.abbreviation+'-'+this+'.png" class="img-responsive"><span class="insignia-tag">'+this+'</span></div>');
-					newInsignia.appendTo('.reference-detail-images');
-				});
-				
-				if(rank.referenceShared){
-					$.each(rank.referenceShared, function(){
-						var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
-						newInsignia.appendTo('.reference-detail-images');
-					});
-				}
-			}
-			else{
-				//if no insignia, show blank
-				var newInsignia=$('<div><img src="img/blank.png" class="img-responsive"></div>');
-				newInsignia.appendTo('.reference-detail-images');
-			}		
+			var newInsignia=$('<div><img src="img/'+rank.branch+'/'+rank.abbreviation+'.png" class="img-responsive"></div>');
+			newInsignia.appendTo('.reference-detail-images');
+	
 
 			//open modal
 			$('#reference-detail').modal();
@@ -290,94 +247,22 @@ $(document).ready(function(){
 	});
 
 	//load ranks from json file, populate reference field
-	$.getJSON('js/ratings.json',function(data){
-
-
-		//populate ranks field
-		$.each(data,function(index){
-			this.id=index;
-
-			var imgURL;
-
-			imgURL=this.branch+'/'+this.abbreviation+'.png';
-
-
-			var newRating=$('<a href="#" class="reference-rating type-rating branch-'+this.branch+'" data-id="'+this.id+'">'+
-				'<img src="img/'+imgURL+'" class="img-responsive">'+
-				'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
-				'<div class="reference-rank-title">'+
-					this.title+
-				'</div>'+
-			'</a>').appendTo('.reference-field');
-		});
-
-		$('.reference-field').isotope({
-			filter:'.reference-rank'
-		});
-
-
-		//click action to open modal
-		$('.reference-rating').click(function(){
-			var rating=data[$(this).attr('data-id')];
-
-			$('.reference-detail-title').text(rating.title);
-			$('.reference-detail-branch').text(rating.branch);
-			$('.reference-detail-description').text(rating.description);
-
-			//emtpy image field in refernce detail modal
-			$('.reference-detail-images').empty();
-
-			//insert images into modal
-			var newInsignia=$('<div><img src="img/'+rating.branch+'/'+rating.abbreviation+'.png" class="img-responsive"><span class="insignia-tag">Rating</span></div>');
-			newInsignia.appendTo('.reference-detail-images');				
-
-			//open modal
-			$('#reference-detail').modal();
-			return false;
-		});
-		
-	});
+	
 	
 	//change isotope field basedon filter settings
 	function updateFilter(){
 		$('.loader').animateIn('fadeIn');
 		var textbox=$('input[type=text]');
-		var selectbox=$('select');
-		var branch=$('#filter-branch');
-		var type=$('#filter-type');
-		var rating=$('#rating-toggle').is(':checked');
-		console.log(rating);
+
 		//isotope filtering
 		$('.reference-field').isotope({
 			filter:function(){
 				var allTrue=true;
 				//if ratings mode, only consider text search
-				if(rating==true && $(this).hasClass('reference-rating')){
-					if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
-						allTrue=false;
-					}
-				}
-				else{
 
-					if(type.val()!='all' && !$(this).hasClass('type-'+type.val())){
-						allTrue=false;
-					}
 
-					if(branch.val()!='all' && !$(this).hasClass('branch-'+branch.val())){
-						allTrue=false;
-					}
-
-					if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
-						allTrue=false;
-					}
-
-					if(rating==true && $(this).hasClass('reference-rank')){
-						allTrue=false;
-					}
-
-					if(rating!=true && $(this).hasClass('reference-rating')){
-						allTrue=false;
-					}
+				if(!$(this).find('.reference-rank-title:contains("'+textbox.val()+'")').length){
+					allTrue=false;
 				}
 
 				return allTrue;
@@ -392,18 +277,6 @@ $(document).ready(function(){
 		updateFilter();
 	});
 
-	$('input[type=checkbox]').change(function(){
-		if($(this).is(':checked')){
-			$('select').parent().css('opacity','.5');
-			$('select').prop('disabled','disabled');
-		}
-		else{
-			$('select').parent().css('opacity','1');
-			$('select').prop('disabled',false);
-		}		
-		updateFilter();
-
-	});
 
 	$('input[type=text]').keyup(function(){
 		updateFilter();
@@ -412,17 +285,15 @@ $(document).ready(function(){
 
 	//returns random rank
 	function getRandomRank(possibleDistractors){
+
 		var set=ranks;
 		if(possibleDistractors){
 			set=possibleDistractors;
 		}
 
 		var randomIndex=-1;
+		randomIndex=chance.integer({min:0, max:set.length-1});
 
-		do{
-			randomIndex=chance.integer({min:0, max:set.length-1});
-		}
-		while(!set[randomIndex].quiz);
 
 		return set[randomIndex];
 	}
@@ -438,74 +309,32 @@ $(document).ready(function(){
 		//repeat until unique rank found
 		do{
 			addedrank=getRandomRank();
-			insignia=getRandomInsignia(addedrank);
 
-			var possibleDistractors = JSONSelect.match(':root>:has(:val("'+insignia+'"))', ranks);
+			var possibleDistractors = ranks;
 
-			if(rankHistory.indexOf(addedrank.id+'-'+insignia)===-1&&possibleDistractors.length>=4){
-				rankHistory.push(addedrank.id+'-'+insignia);
+			if(rankHistory.indexOf(addedrank.id)===-1&&possibleDistractors.length>=4){
+				rankHistory.push(addedrank.id);
+				console.log(copyArray(addedrank));
 				return copyArray(addedrank);
 			}
 		}
 		while(originalHistoryLength==rankHistory.length);
 	}
 
-	//returns acceptable insignia for rank
-	function getRandomInsignia(addedrank){
-		var randomIndex=chance.integer({min:0, max:addedrank.quiz.length-1});
-		return addedrank.quiz[randomIndex];
-	}
 
-	//checks conflicts object, returns presence of conflict
-	function conflictExists(questionRank,distractor,insignia){
-
-		if(questionRank.type!=distractor.type){
-			return true;
-		}
-		else{
-			//console.log(questionRank,distractor,insignia);
-			if(conflicts[questionRank.branch]){
-
-				if(conflicts[questionRank.branch][distractor.branch]){
-					if(conflicts[questionRank.branch][distractor.branch][questionRank.type]){
-						
-						if(conflicts[questionRank.branch][distractor.branch][questionRank.type].indexOf(insignia)==-1){
-							return false;
-						}
-						else{
-							return true;
-						}
-					}
-					else{
-						return false;
-					}
-				}
-				else{
-					return false;
-				}
-				
-			}
-			else{
-				return false;
-			}
-		}
-
-			
-	}
-
+	
 	//returns unique set of distractors, not including question rank
 	function getDistrators(questionRank){
 		var distractors=[];
 		var distractor;
-		var insignia=rankHistory[rankHistory.length-1].split('-')[1];
 		
-		var possibleDistractors = JSONSelect.match(':root>:has(:val("'+insignia+'"))', ranks);
+		var possibleDistractors = ranks;
 		
 		//repeat until 3 unique distractors found
 		do{
 			distractor=getRandomRank(possibleDistractors);
 			
-			if(distractors.indexOf(distractor)===-1&&distractor.id!=questionRank.id&&!conflictExists(questionRank,distractor,insignia)){
+			if(distractors.indexOf(distractor)===-1&&distractor.id!=questionRank.id){
 				distractors.push(distractor);
 
 				if(distractors.length==3){
@@ -531,13 +360,14 @@ $(document).ready(function(){
 
 		//update progress indicator
 		updateProgress();
-
+		
 		//clear options
 		$('.options a').remove();
 
 		//get random unique rank, that hasn't been previously shown
 		var questionRank=getUniqueRank();
-
+		//console.log(questionRank);
+		
 		//mark rank as correct
 		questionRank.correct=true;
 		$('.question-rank-branch').text(questionRank.branch);
@@ -546,10 +376,10 @@ $(document).ready(function(){
 		
 		//load response images into response modal
 		$('.response-images').empty();
-		$.each(questionRank.quiz,function(){
-			var newInsignia=$('<div><img src="img/'+questionRank.branch+'/'+questionRank.abbreviation+'-'+this+'.png" class="img-responsive"><span class="insignia-tag">'+this+'</span></div>');
-			newInsignia.appendTo('.response-images');
-		});
+	
+		var newInsignia=$('<div><img src="img/'+questionRank.branch+'/'+questionRank.abbreviation+'.png" class="img-responsive"></div>');
+		newInsignia.appendTo('.response-images');
+
 
 		//get unique distractors
 		var distractors=getDistrators(questionRank);
@@ -558,8 +388,6 @@ $(document).ready(function(){
 		//merge distractors and correct together
 		$.merge(distractors,correct);
 
-		//identify current insignia set
-		var insignia=rankHistory[rankHistory.length-1].split('-')[1];
 		
 		//shuffle options
 		var options=shuffle(distractors);
@@ -571,7 +399,7 @@ $(document).ready(function(){
 			if (this.correct){
 				correctString='data-correct="true"';
 			}
-			var newOption=$('<a href="#" '+correctString+' style="display:none;"><img src="img/'+this.branch+'/'+this.abbreviation+'-'+insignia+'.png" alt="" class="img-responsive"></a>');
+			var newOption=$('<a href="#" '+correctString+' style="display:none;"><img src="img/'+this.branch+'/'+this.abbreviation+'.png" alt="" class="img-responsive"></a>');
 			newOption.appendTo('.options');
 		});
 
@@ -640,6 +468,7 @@ $(document).ready(function(){
 					.trigger('change');
 			}, 1);
 		});
+
 	}
 
 	//screen destinations from home
