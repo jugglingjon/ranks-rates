@@ -18,54 +18,6 @@ timer;
 var difficulty;
 var maxDifficulty;
 
-//conflicts object to keep identical ranks to be shown as distractors
-var conflicts={
-	"Navy":{
-		"Marines":{
-			"Officer":["Collar"]
-		},
-		"Air Force":{
-			"Officer":["Collar"]
-		},
-		"Army":{
-			"Officer":["Collar"]
-		}
-	},
-	"Marines":{
-		"Navy":{
-			"Officer":["Collar"]
-		},
-		"Air Force":{
-			"Officer":["Collar"]
-		},
-		"Army":{
-			"Officer":["Collar"]
-		}
-	},
-	"Air Force":{
-		"Navy":{
-			"Officer":["Collar"]
-		},
-		"Marines":{
-			"Officer":["Collar"]
-		},
-		"Army":{
-			"Officer":["Collar"]
-		}
-	}
-	,
-	"Army":{
-		"Navy":{
-			"Officer":["Collar"]
-		},
-		"Marines":{
-			"Officer":["Collar"]
-		},
-		"Air Force":{
-			"Officer":["Collar"]
-		}
-	}
-}
 
 
 //retrieves diffculty settings
@@ -180,7 +132,7 @@ $(document).ready(function(){
 
 
 	//hide scoreboard if empty
-	if(!localStorage.scores){
+	if(!localStorage.ratingScores){
 		$('[data-to=scoreboard]').hide();
 	}
 
@@ -495,7 +447,7 @@ $(document).ready(function(){
 	//build scoreboard
 	$('[data-to=scoreboard]').click(function(){
 		//copy of scores local storage
-		var scores=JSON.parse(localStorage.scores);
+		var scores=JSON.parse(localStorage.ratingScores);
 
 		//comparison sort function for top scores list
 		function compare(a,b) {
@@ -564,16 +516,16 @@ $(document).ready(function(){
 					restoreDifficulty();
 
 					//add to existing localstorage scorebard, or create if empty
-					if(localStorage.scores){
-						var existingScores=localStorage.scores;
+					if(localStorage.ratingScores){
+						var existingScores=localStorage.ratingScores;
 						existingScores=JSON.parse(existingScores);
 						existingScores.push(scoreObj);
 						existingScores=JSON.stringify(existingScores);
-						localStorage.scores=existingScores;
+						localStorage.ratingScores=existingScores;
 					}
 					else{
 						scoreObj=JSON.stringify([scoreObj]);
-						localStorage.scores=scoreObj;
+						localStorage.ratingScores=scoreObj;
 					}
 
 					//show scoreboard link, if hidden because previously empty
