@@ -97,7 +97,7 @@ h2 {
   border-radius: 3px;
   color: white;
   -webkit-transition: 0.3s ease-out background-color;
-          transition: 0.3s ease-out background-color;
+  transition: 0.3s ease-out background-color;
 }
 .btn-secondary:active,
 .btn-secondary:hover,
@@ -119,7 +119,7 @@ h2 {
 }
 .box .box-title .question-text {
   -webkit-transition: 0.3s ease-out opacity;
-          transition: 0.3s ease-out opacity;
+  transition: 0.3s ease-out opacity;
 }
 .box .box-content {
   background-color: rgba(39, 39, 39, 0.9);
@@ -166,7 +166,7 @@ h2 {
   border-radius: 50%;
   margin: 0 3px;
   -webkit-transition: 0.3s ease-out all;
-          transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
 }
 .nav .progress-area .progress-dots span.active {
   background: rgba(255, 255, 255, 0.8);
@@ -547,7 +547,7 @@ canvas {
   display: inline-block;
   position: relative;
   -webkit-transition: 0.3s ease-out background-color;
-          transition: 0.3s ease-out background-color;
+  transition: 0.3s ease-out background-color;
 }
 .nav-reference .select-arrow::before {
   bottom: 15px;
@@ -599,7 +599,8 @@ canvas {
   font-size: 30px;
 }
 #reference-detail .modal-content .modal-footer .reference-detail-description {
-  display: none;
+  margin-top: 20px;
+  color: #c5c5c5;
 }
 body {
   background-color: black;
@@ -742,7 +743,7 @@ html {
   width: 120px;
   height: 51px;
   -webkit-transition: 0.4s ease-out all;
-          transition: 0.4s ease-out all;
+  transition: 0.4s ease-out all;
   padding: 0 16px;
   font-weight: normal;
   font-size: 18px;
@@ -763,7 +764,7 @@ html {
   border: 1px solid white;
   border-radius: 3px;
   -webkit-transition: background 0.4s;
-          transition: background 0.4s;
+  transition: background 0.4s;
 }
 .switch input.cmn-toggle-round-flat + label:after {
   top: 4px;
@@ -773,7 +774,7 @@ html {
   background-color: #fff;
   border-radius: 3px;
   -webkit-transition: margin 0.4s, background 0.4s;
-          transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s;
 }
 .switch input.cmn-toggle-round-flat:checked + label {
   padding-left: 14px;
