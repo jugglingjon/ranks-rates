@@ -717,6 +717,7 @@ $(document).ready(function(){
 		$('.nav-question').animateOut('fadeOutUp');
 
 		$('.question').animateOut('fadeOutUp',function(){
+			$('.question-rank-title,.question-rank-branch').text('');
 			$('.intro').animateIn('fadeIn');
 			$('.options a').hide();
 		});
