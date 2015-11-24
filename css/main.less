@@ -40,11 +40,18 @@ Examples:
 
 .container{max-width: 970px !important;}
 
-body{
-	background-image: url('../img/background.jpg');
-	background-repeat: no-repeat;
+html {
+	background: url('../img/background.jpg') no-repeat center center fixed;
 	background-size: cover;
-	background-attachment: fixed;
+	height: 100%;
+	overflow: hidden;
+}
+
+body
+{
+	height:100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	font-size: 16px;
 	font-family: 'Open Sans', helvetica, arial, sans-serif;
 	color: white;
@@ -726,7 +733,7 @@ canvas{
 @white: #ffffff;
 
 body {
-	background-color: black;
+	background:transparent;
 	width: 100%;
 }
 
