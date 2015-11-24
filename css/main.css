@@ -35,14 +35,20 @@ Examples:
   max-width: 970px !important;
 }
 body {
-  background-image: url('../img/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   font-size: 16px;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   color: white;
 }
+
+.background{
+  content: '';
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
 a:hover {
   text-decoration: none;
 }
