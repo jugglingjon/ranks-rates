@@ -209,6 +209,8 @@ $(document).ready(function(){
 		restoreDifficulty();
 
 		//populate ranks field
+		
+
 		$.each(ranksBackup,function(index){
 			this.id=index;
 
@@ -232,6 +234,7 @@ $(document).ready(function(){
 				'</div>'+
 			'</a>').appendTo('.reference-field');
 		});
+		$('<div classs="grid-sizer"></div>').appendTo('.reference-field');
 
 		//click action to open modal
 		$('.reference-rank').click(function(){
@@ -292,14 +295,17 @@ $(document).ready(function(){
 
 	//change isotope field basedon filter settings
 	function updateFilter(){
+
 		$('.loader').animateIn('fadeIn');
 		var textbox=$('input[type=text]');
 		var selectbox=$('select');
 		var branch=$('#filter-branch');
 		var type=$('#filter-type');
 		//isotope filtering
+		console.log('filtering');
 		$('.reference-field').isotope({
 			filter:function(){
+				
 				var allTrue=true;
 
 				if(type.val()!='all' && !$(this).hasClass('type-'+type.val())){
@@ -590,7 +596,13 @@ $(document).ready(function(){
 					$('.progress-current').text('1');		
 				}
 				else if(toTarget=='reference'){
-					$('.reference-field').isotope();
+					$('.reference-field').isotope({
+						itemSelector: '.reference-rank',
+						percentPosition: true,
+						masonry: {
+							columnWidth: $('.reference.field').width()/2
+						}
+					});
 				}
 			});
 		});
@@ -709,6 +721,11 @@ $(document).ready(function(){
 		setDifficulty(difficultyLevel,maxDifficulty);
 
 		return false;
+	});
+
+	$('#filter-toggle').click(function(){
+		$('.filters').slideToggle(300);
+		$('.reference').toggleClass('filtering');
 	});
 
 

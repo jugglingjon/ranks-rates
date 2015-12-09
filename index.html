@@ -22,16 +22,16 @@
 	<div class="nav-question nav" style="display:none;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-xs-3">
 					<a href="#" id="back-question" class="btn btn-secondary">Back</a>
 				</div>
-				<div class="col-md-6 text-center progress-area">
+				<div class="col-xs-6 text-center progress-area">
 					<span class="progress-current">1</span><span class="progress-of">of</span><span class="progress-total">10</span>
 					<div class="progress-dots text-center">
 						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
 					</div>
 				</div>
-				<div class="col-md-3 score text-right">
+				<div class="col-xs-3 score text-right">
 					<h2 class="score-current">0</h2>
 					<h3 class="score-new">+500</h3>
 				</div>
@@ -66,23 +66,26 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="#" id="back-reference" class="btn btn-secondary">Back</a>
-					<div class="select-arrow icon-chevron-down">
-						<select id="filter-type">
-							<option value="all">Officers & Enlisted</option>
-							<option value="Officer">Officers Only</option>
-							<option value="Enlisted">Enlisted Only</option>
-						</select>
+					<a href="#" id="filter-toggle" class="btn btn-secondary">Filters</a>
+					<div class="filters">
+						<div class="select-arrow icon-chevron-down">
+							<select id="filter-type">
+								<option value="all">Officers & Enlisted</option>
+								<option value="Officer">Officers Only</option>
+								<option value="Enlisted">Enlisted Only</option>
+							</select>
+						</div>
+						<div class="select-arrow icon-chevron-down">
+							<select id="filter-branch">
+								<option value="all">All Branches</option>
+								<option value="Navy">Navy Only</option>
+								<option value="Marines">Marines Only</option>
+								<option value="Air Force">Air Force Only</option>
+								<option value="Army">Army Only</option>
+							</select>
+						</div>
+						<input type="text" class="reference-filter" placeholder="Type to filter">
 					</div>
-					<div class="select-arrow icon-chevron-down">
-						<select id="filter-branch">
-							<option value="all">All Branches</option>
-							<option value="Navy">Navy Only</option>
-							<option value="Marines">Marines Only</option>
-							<option value="Air Force">Air Force Only</option>
-							<option value="Army">Army Only</option>
-						</select>
-					</div>
-					<input type="text" class="reference-filter" placeholder="Type to filter">
 				</div>
 			</div>
 		</div>
@@ -105,7 +108,7 @@
 							<li><a href="" class="btn btn-primary btn-block" data-to="settings">Settings</a></li>
 						</ul>
 					</div>
-					<div class="version">Version 1.2</div>
+					<div class="version">Version 1.3</div>
 				</div>
 			</div>
 		</div>
