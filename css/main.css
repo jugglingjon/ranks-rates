@@ -438,7 +438,6 @@ canvas {
 .scoreboard .settings-box .box-title,
 .settings .settings-box .box-title {
   padding: 20px 40px;
-  height: 104px;
 }
 .scoreboard .scoreboard-box .box-content,
 .settings .scoreboard-box .box-content,
@@ -446,6 +445,22 @@ canvas {
 .settings .settings-box .box-content {
   padding: 30px 40px;
   min-height: 264px;
+}
+@media screen and (max-width: 767px) {
+  .scoreboard .scoreboard-box .box-content .scoreboard-right,
+  .settings .scoreboard-box .box-content .scoreboard-right,
+  .scoreboard .settings-box .box-content .scoreboard-right,
+  .settings .settings-box .box-content .scoreboard-right {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scoreboard .scoreboard-box .box-content,
+  .settings .scoreboard-box .box-content,
+  .scoreboard .settings-box .box-content,
+  .settings .settings-box .box-content {
+    padding: 30px 15px;
+  }
 }
 .scoreboard .scoreboard-box .box-content h1,
 .settings .scoreboard-box .box-content h1,
