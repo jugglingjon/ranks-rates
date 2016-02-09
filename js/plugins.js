@@ -21,11 +21,11 @@
     }
 }());
 
-window.onerror = function() {
-  var message = /* get error messages and put them here */
+/*window.onerror = function() {
+  var message = 
   alert(message);
   return true;
-}
+}*/
 
 // Place any jQuery/helper plugins in here.
 

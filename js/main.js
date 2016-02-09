@@ -49,21 +49,12 @@ function setDifficulty(dif, dmax){
 	$('.btn-difficulty[data-set-difficulty="'+difficulty+'"]').addClass('setDifficulty');
 	$('.btn-difficulty[data-set-difficulty="'+maxDifficulty+'"]').nextAll().addClass('disabledDifficulty');
 
+
+	var optionPadding=(3-difficulty)*100;
+	$('.question .question-box .box-content .options').css('padding-left',optionPadding+'px');
+
 	//define subset of ranks and score multiplier based on difficulty setting
 	scoreMultiplier=dif;
-	if(dif==1){
-		$.merge(difficultySubset,JSONSelect.match(':root>:has(.branch:val("Navy"))', ranksBackup));
-	}
-	else if(dif==2){
-		$.merge(difficultySubset,JSONSelect.match(':root>:has(.branch:val("Navy"))', ranksBackup));
-		$.merge(difficultySubset,JSONSelect.match(':root>:has(.branch:val("Marines"))', ranksBackup));
-	}
-	else{
-		difficultySubset=ranksBackup;
-	}
-
-	//set active ranks field as subset
-	ranks=difficultySubset;
 
 }
 
@@ -289,12 +280,12 @@ $(document).ready(function(){
 			if(distractors.indexOf(distractor)===-1&&distractor.id!=questionRank.id){
 				distractors.push(distractor);
 
-				if(distractors.length==3){
+				if(distractors.length==difficulty){
 					return distractors;
 				}
 			}
 		}
-		while(distractors.length<3);
+		while(distractors.length<difficulty);
 	}
 
 	//updates progress indicator area for quiz
