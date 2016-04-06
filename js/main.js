@@ -168,6 +168,8 @@ function commaScore(val){
 
 $(document).ready(function(){
 
+	$('#disclaimer').modal();
+
 	//add scrolled class when page scrolls
 	$(window).scroll(function(){
 		if($(window).scrollTop()>20){
