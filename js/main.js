@@ -168,7 +168,15 @@ function commaScore(val){
 
 $(document).ready(function(){
 
-	$('#disclaimer').modal();
+	//disclaimer when new
+	if(!localStorage.newUser){
+		$('#disclaimer').modal();
+		localStorage.setItem('newUser','true');
+	}
+	else{
+		
+	}
+	
 
 	//add scrolled class when page scrolls
 	$(window).scroll(function(){
