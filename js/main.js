@@ -168,6 +168,12 @@ function commaScore(val){
 
 $(document).ready(function(){
 
+	//zendesk if online
+	zE(function() {
+		zE.hide();
+		$('.version').append($('<a href="#" onclick="zE.activate({hideOnClose: true});" style="color:white;text-decoration:underline;margin-left:10px;">Feedback</a>'));
+	});
+
 	//disclaimer when new
 	if(!localStorage.newUser){
 		$('#disclaimer').modal();
