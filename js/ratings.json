@@ -3,336 +3,336 @@
     "title":"Aviation Boatswain's Mate",
     "abbreviation":"AB",
     "branch":"Navy",
-    "description":"Aviation Boatswain's Mates are responsible for aircraft catapults, arresting gear and barricades. They operate fuel and lube oil transfer systems, as well as direct aircraft on the flight deck and in hangar bays before launch and after recovery. They use tow tractors to position planes and operate support equipment used to start aircraft."
+    "description":"ABs operate, maintain, and repair aircraft catapults, arresting gear, and barricades. They operate and maintain fuel- and lube-oil transfer systems. ABs direct aircraft on the flight deck and in hangar bays before launch and after recovery. They use tow tractors to position planes and operate support equipment used to start aircraft. (Service ratings: ABE [launching and recovery equipment]; ABF [fuels]; ABH [aircraft handling].)"
   },
   {
     "title":"Air-Traffic Controller",
     "abbreviation":"AC",
     "branch":"Navy",
-    "description":"Air-Traffic Controllers assist with the speedy flow of air traffic by directing and controlling aircraft. They operate field lighting systems and communicate with aircraft. They furnish pilots with information regarding traffic, navigation and weather conditions, as well as operate and adjust ground-controlled approach (GCA) systems and interpret targets on radar screens and plot aircraft positions."
+    "description":"ACs assist in the essential safe, orderly, and speedy flow of air traffic by directing and controlling aircraft under visual (VFR) and instrument (IFR) flight rules. They operate field lighting systems, commu¬nicate with aircraft, and furnish pilots with in¬formation regarding traffic, navigation, and weather conditions. They operate and adjust GCA (ground-controlled approach) systems. They interpret targets on radar screens and plot aircraft positions."
   },
   {
     "title":"Aviation Machinist's Mate",
     "abbreviation":"AD",
     "branch":"Navy",
-    "description":"Aviation Machinist's Mates are usually assigned to billets concerned with the maintenance of turbo-jet aircraft engines and associated equipment. They are responsible for the maintenance and replacement of aircraft engines and accessories, as well as performing the duties of flight engineers."
+    "description":"ADs maintain jet aircraft engines and associated equipment, or engage in any one of several types of aircraft maintenance activities. ADs maintain, service, adjust, and replace aircraft engines and accessories, as well as perform the duties of flight engineers. (Compression rating: AF [Aviation Maintenanceman].) "
   },
   {
     "title":"Aviation Electrician's Mate",
     "abbreviation":"AE",
     "branch":"Navy",
-    "description":"Aviation Electrician's Mates are responsible for aircraft electrical power generating and converting systems. They maintain lighting, control, and indicating systems and can install as well as maintain flight and engine instrument systems."
+    "description":"AEs maintain, adjust, and repair electrical-power generating, converting, and distributing systems, as well as lighting, control, and indicating systems in aircraft. They also install and maintain wiring and flight and engine instrument systems, which include automatic flight control, stabilization, aircraft compass, attitude reference, and inertial navigation systems. (Compression rating: AV [Avionics Technician].)"
   },
   {
     "title":"Aerographer's Mate",
     "abbreviation":"AG",
     "branch":"Navy",
-    "description":"Aerographer's Mates are the U.S. Navy's weather forecasters. They are trained in meteorology and the use of aerological instruments that monitor air pressure, temperature, humidity, wind speed, and direction. They prepare weather maps and forecasts and can analyze atmospheric conditions to determine the best flight levels for aircraft. An AG can measure wind and air density to aid the accuracy of anti-aircraft firing, shore bombardment and delivery of weapons by aircraft."
+    "description":"The Navy has its own weather forecasters, AGs, who are trained in meteorology and the use of aerological instruments that monitor such weather characteris¬tics as air pressure, temperature, humidity, wind speed, and wind direction. They prepare weather maps and forecasts, analyze atmospheric conditions to determine the best flight levels for aircraft, and measure wind and air density to in¬crease the accuracy of antiaircraft firing, shore bombardment, and delivery of weapons by ¬aircraft."
   },
   {
     "title":"Aviation Structural Mechanic",
     "abbreviation":"AM",
     "branch":"Navy",
-    "description":"Aviation Structural Mechanics are responsible for the maintenance of many aircraft parts such as wings, fuselage, tail, control surfaces, landing gear, and hydraulic systems. AME's maintain and repair oxygen, cockpit and cabin pressurization, and ejection seat systems."
+    "description":"The maintenance and repair of aircraft parts (wings, fuselage, tail, control surfaces, landing gear, and attending mechanisms) are performed by AMs working with metals, alloys, and plastics. AMs maintain and repair safety equipment and hydraulic systems. (Service rating: AME [safety equipment].) (Compression rating: AF [Aviation Maintenanceman].)"
   },
   {
     "title":"Aviation Ordnanceman",
     "abbreviation":"AO",
     "branch":"Navy",
-    "description":"Aviation Ordnancemen operate and handle aviation ordnance equipment. They are responsible for the maintenance of guns, bombs, torpedoes, rockets, and missiles. Their duties include the stowing, issuing, and loading of munitions and small arms."
+    "description":"Navy planes carry guns, bombs, torpedoes, rockets, and missiles to attack the enemy on the sea, under the sea, in the air, and on land. AOs are responsible for maintaining, repairing, installing, operating, and handling aviation ordnance equipment; their duties also include the handling, stowing, issuing, and loading of munitions and small arms."
   },
   {
     "title":"Aviation Support Equipment Technician",
     "abbreviation":"AS",
     "branch":"Navy",
-    "description":"Aviation Support Equipment Technicians perform intermediate maintenance on aviation accessory equipment at naval air stations and aboard aircraft carriers. They maintain gasoline and diesel engines, gas turbine compressor units and electrical systems."
+    "description":"ASs perform intermediate maintenance on “yellow” (aviation accessory) equipment at naval air stations and aboard carriers. They maintain gasoline and diesel engines, hydraulic and pneumatic systems, liquid and gaseous oxygen and nitrogen systems, gas-turbine compressor units, and electrical systems."
   },
   {
     "title":"Aviation Electronics Technician",
     "abbreviation":"AT",
     "branch":"Navy",
-    "description":"Aviation Electronics Technicians are responsible for the maintenance of all aircraft radio, radar, and other rapid communications devices. They maintain all navigation equipment, and calibration of aviation and shipboard systems alike."
+    "description":"ATs perform preventive and corrective maintenance on aviation electronic components supported by conventional and automatic test equipment. They repair the electronic components of weapons, communications, radar, navigation, antisubmarine warfare sensors, electronic warfare, data link, fire control, and tactical displays. (Compression rating: AV [Avionics Technician].)"
   },
   {
-    "title":"Naval Aircrewman",
+    "title":"Naval Air Crewman",
     "abbreviation":"AW",
     "branch":"Navy",
-    "description":"Naval Aircrewman operate airborne radar and electronic equipment used in detecting, locating, and tracking submarines. They provide information for aircraft and surface navigation and act as helicopter-rescue crewmen, and function as part of the flight crew on long-range and intermediate-range aircraft. Beginning in 2009, other enlisted Aviation ratings that perform flight engineer or loadmaster duties in Navy aircraft will convert to the AW rating."
+    "description":"AWs perform a wide variety of functions in many of the Navy’s aircraft, such as operating electronic equipment (radars, radios, etc.), performing search and rescue techniques, etc.  (Service Ratings: AWF [mechanical]; AWO [operator]; AWR [tactical helicopter]; AWS [helicopter]; AWV [avionics].)"
   },
   {
     "title":"Aviation Maintenance Administrationman",
     "abbreviation":"AZ",
     "branch":"Navy",
-    "description":"Aviation Maintenance Administration men perform clerical, administrative, and managerial duties necessary to keep aircraft maintenance activities running smoothly. They schedule and coordinate the maintenance workload, including inspections and modifications to aircraft and equipment."
+    "description":"AZs perform clerical, administrative, and managerial duties necessary to keep aircraft-maintenance activities running smoothly. They plan, schedule, and coordinate maintenance, including inspections and modifications to aircraft and equipment."
   },
   {
     "title":"Aircrew Survival Equipmentman",
     "abbreviation":"PR",
     "branch":"Navy",
-    "description":"Aircrew Survival Equipmentmen are responsible for the packing and care of parachutes. They maintain flight clothing, rubber life rafts, life jackets, oxygen-breathing apparatus, protective clothing, and air-sea rescue equipment. The abbreviation comes from the former official title (still used informally) of parachute rigger."
+    "description":"Parachutes are the lifesaving equipment of aviators when they have to bail out. In time of disaster, a parachute may also be the only means of delivering badly needed medicines, goods, and other supplies to isolated victims. PRs pack and care for parachutes as well as service, maintain, and repair flight clothing, rubber life rafts, life jackets, oxygen-breathing equipment, protective clothing, and air-sea rescue equipment."
   },
   {
     "title":"Builder",
     "abbreviation":"BU",
     "branch":"Navy",
-    "description":"Navy builders are like civilian construction workers. They are skilled carpenters, plasterers, roofers, cement finishers, asphalt workers, masons, and painters. They build and repair all types of structures including: piers, bridges, towers, schools, offices, houses, and other buildings."
+    "description":"Navy BUs are similar to civilian construction workers. They may be skilled carpenters, plasterers, roofers, cement finishers, asphalt workers, masons, painters, bricklayers, sawmill operators, or cabinetmakers. BUs build and repair all types of structures, including piers, bridges, towers, underwater installations, schools, of¬fices, houses, and other buildings. (Compression rating: CU [Constructionman].)"
   },
   {
     "title":"Construction Electrician",
     "abbreviation":"CE",
     "branch":"Navy",
-    "description":"Construction Electricians are responsible for the power production and electrical work required to build and operate airfields, roads, barracks, and hospitals. The work of a CE is equivalent to civilian construction electricians, telephone and electrical repairmen, lineman, and others."
+    "description":"CEs are responsible for the power production and electrical work required to build and operate airfields, roads, barracks, hospitals, shops, and warehouses. The work of Navy CEs is like that of civilian construction electricians, powerhouse electricians, telephone and electrical repairmen, substation operators, linemen, and others. (Compression rating: UC [Utilities Constructionman].)"
   },
   {
     "title":"Construction Mechanic",
     "abbreviation":"CM",
     "branch":"Navy",
-    "description":"Construction Mechanics maintain many types of construction machinery including; buses, dump trucks, bulldozers, rollers, cranes, backhoes, and pile drivers. They work on gasoline and diesel engines and transmissions. They also repair electrical, hydraulic, pneumatic and steering systems."
+    "description":"CMs maintain heavy construction and automotive equipment (buses, dump trucks, bulldozers, rollers, cranes, backhoes, and pile drivers) as well as other construction equipment. They service vehicles and work on gasoline and diesel engines, ignition and fuel systems, transmissions, electrical systems, and hydraulic, pneumatic, and steering systems. (Compression rating: EQ [Equipmentman].)"
   },
   {
     "title":"Engineering Aide",
     "abbreviation":"EA",
     "branch":"Navy",
-    "description":"Engineering Aides provide construction engineers with information needed to develop final construction plans. They conduct surveys for roads, airfields, buildings, etc. They perform soil tests, prepare topographic and hydrographic maps. They also survey for sewers, water lines, drainage systems and underwater excavations."
+    "description":"EAs provide construction engineers with the information needed to develop final construction plans. EAs conduct surveys for roads, airfields, buildings, waterfront structures, pipelines, ditches, and drainage systems. They perform soil tests, prepare top-ographic and hydrographic maps, and survey for sewers, water lines, drainage systems, and underwater excavations. (Compression rating: CU [Constructionman].)"
   },
   {
     "title":"Equipment Operator",
     "abbreviation":"EO",
     "branch":"Navy",
-    "description":"Equipment Operators work with heavy machinery such as bulldozers, power shovels, pile drivers, etc. They use this machinery to dig ditches, excavate for building foundations, break up old concrete or asphalt paving and pour new paving. They grade and remove debris from construction sites, raise girders, and move and set in place other pieces of equipment or materials needed for the job."
+    "description":"EOs work with heavy machinery such as bulldozers, power shovels, pile drivers, rollers, and graders. EOs use this machinery to dig ditches and excavate for building foundations, to break up old concrete or asphalt paving and pour new paving, to loosen soil and grade it, to dig out tree trunks and rocks, to remove debris from construction sites, to raise girders, and to move and set in place other pieces of equipment or materials needed for a job. (Compression rating: EQ [Equipmentman].)"
   },
   {
     "title":"Steelworker",
     "abbreviation":"SW",
     "branch":"Navy",
-    "description":"Steelworkers rig and operate all special equipment used to move or hoist structural steel, structural shapes and similar material. They erect and dismantle steel bridges, piers, buildings, storage tanks, etc. They work with steel shapes, plates and built-up sections used in the construction of overseas facilities. They are skilled in arc welding, MIG welding, TIG welding, and gas welding."
+    "description":":SWs rig and operate all special equipment used to move or hoist structural steel, structural shapes, and similar material. They erect or dismantle steel bridges, piers, buildings, tanks, towers, and other structures. They place, fit, weld, cut, bolt, and rivet steel shapes, plates, and built-up sections used in the construction of overseas facilities. (Compression rating: CU [Constructionman].)"
   },
   {
     "title":"Utilitiesman",
     "abbreviation":"UT",
     "branch":"Navy",
-    "description":"Utilitiesmen supervise and perform tasks involved in the installation and maintenance of plumbing, steam, compressed air and fuel storage and distribution systems. They maintain air conditioning and refrigeration equipment, as well as sewage collecting and disposal facilities."
+    "description":"UTs plan, supervise, and perform tasks involved in the installation, operation, maintenance, and repair of plumbing, heating, steam, compressed-air systems, fuel-storage and -distribution systems, water-treatment and -distribution systems, air-conditioning and refrigeration equipment, and sewage-collecting and disposal facilities. (Compression rating: UC [Utilities Constructionman].)"
   },
   {
-    "title":"Hospital Corpsman",
-    "abbreviation":"HM",
+    "title":"Hospital Corpsman/Hospital Corpsman Dental Assistant",
+    "abbreviation":"HM-HMDA",
     "branch":"Navy",
-    "description":"Hospital Corpsmen are medical professionals who provide health care to service people and their families. They serve as pharmacy technicians, medical technicians, nurse's aides, physician's or dentist's assistants, battlefield medics, and more. All work falls into several categories: first aid and minor surgery, patient transportation, patient care, prescriptions and laboratory work, food service inspections, and clerical duties."
+    "description":"HMs assist medical professionals in providing health care to service people and their families. They act as pharmacists, medical technicians, food-service personnel, nurses’ aides, physicians’ or dentists’ assistants, battlefield medics, X-ray technicians, and more. Their work falls into several categories: first aid and minor surgery, patient transportation, pa¬tient care, prescriptions and laboratory work, food-service inspections, and clerical duties."
   },
   {
     "title":"Boatswain's Mate",
     "abbreviation":"BM",
     "branch":"Navy",
-    "description":"Boatswain's Mates train and supervise personnel in all activities relating to marlinspike, deck, and boat seamanship, and oversee the maintenance of the ship's external structure and deck equipment. They act as petty officers in charge of small craft and may perform duties as master-at-arms, serve in or take charge of gun crews, and damage control parties.\n\nBoatswain's Mates are also responsible for the \"deck side\" watch. In port three of the crew are on deck watch 24/7 (in hazardous areas such as war zones there are more than three, depending on ship's size). They are the Officer of the Deck, Boatswain's Mate of the watch, and Messenger of the Watch (usually a Seaman or Seaman Apprentice). They are stationed very close to the gangway and monitor all the comings and goings of persons to and from the ship. At sea the Boatswain's Mate of the watch is within ear shot of the conning officer (on the bridge). The boatswain's Mate of the watch supervises the rest of the enlisted watch standers on deck. They include helmsman, messenger of the watch, and all the look outs. In port or at sea the Boatswain's Mate of the watch is charged with the responsibility of making all announcements to the crew; everything from chow call to general quarters (battle stations)."
+    "description":"BMs train, direct, and supervise others in marlinespike, deck, and boat seamanship; ensure proper upkeep of the ship’s external structure, rigging, deck equipment, and boats; lead working parties; perform seamanship tasks; are in charge of picketboats, self-propelled barges, tugs, and other yard and district craft; serve in or in charge of gun crews and damage-control parties; use and maintain equipment for loading and unloading cargo, ammunition, fuel, and general stores."
   },
   {
     "title":"Culinary Specialist",
     "abbreviation":"CS",
     "branch":"Navy",
-    "description":"Culinary Specialists prepare menus and order the quantities and types of food items. They operate galley and dining facilities, manage large facilities, keep records for food supplies and financial budgets, and can even serve as flight attendant aircrewmen. They can also serve as personal food service specialist, household/estate manager or chef for an admiral, the First Family, President of the United States at Camp David and the White House, to the Vice President at Number One Observatory Circle or for a commanding officer aboard ship or at shore bases. Ashore, Culinary Specialists often manage and maintain clubs, TAD hotels and Permanent Party naval barracks."
+    "description":"CSs operate and manage Navy dining facilities and bachelor enlisted quarters. They are cooks and bakers in Navy dining facilities ashore and afloat, ordering, inspecting, and stowing food. They maintain food service and preparation spaces and equipment, and keep records of transactions and budgets for the food service in living quarters ashore."
   },
   {
     "title":"Cryptologic Technician",
     "abbreviation":"CT",
     "branch":"Navy",
-    "description":"Cryptologic Technicians control the flow of messages and information and also conduct Electronic Warfare. Their work depends on their special branch: CTAs or Administration Cryptologic Technicians (As of 01 OCT 07 CTA merged with the YN rating) perform administrative and clerical duties that control access to classified material. CTIs or Interpretive Cryptologic Technicians handle radiotelephone communications and foreign language translation. CTMs or Maintenance Cryptologic Technicians maintain electronic and electromechanical equipment. CTNs or Networking Cryptologic Technicians handle computer communication. CTRs or Collection Cryptologic Technicians handle all Morse code communications and operate radio direction-finding equipment. Finally, CTTs or Technical Cryptologic Technicians deal with Electronic Warfare. CTTs are the first line of defense against inbound threats and Anti-Ship missiles. They also collect, analyze, and provide electronic intelligence support to commands throughout the world."
+    "description":"Depending on their special career area, CTs control access to classified material, translate foreign-language transmissions, operate radio direction-finding equipment, employ electronic countermeasures, and install, service, and repair special electronic and electromechanical equipment. CTs require special security clearances. (Service ratings: CTI [interpretive]; CTM [maintenance]; CTN [network]; CTR [collection]; CTT [technical].)"
   },
   {
     "title":"Explosive Ordnance Disposal",
     "abbreviation":"EOD",
     "branch":"Navy",
-    "description":"Explosive Ordnance Disposal Technicians locate, identify, render safe and dispose of all forms of ordnance (conventional, nuclear, chemical, biological, military, and improvised) both U.S. and foreign made. Parachute or Helicopter insertion and deep-sea diving capabilities are sometimes necessary to perform this mission. In addition to working closely with other military services, EOD technicians occasionally assist civilian law enforcement agencies."
+    "description":"EODs render safe all types of ordnance, both conventional and unconventional, improvised, chemical, biological, and nuclear. They perform a wide variety of ordnance-related tasks, including underwater location, identification, render-safe, demolition, recovery, and disposal of foreign and domestic ordnance. They also support military and civilian law enforcement agencies. "
   },
   {
     "title":"Electronics Technician",
     "abbreviation":"ET",
     "branch":"Navy",
-    "description":"Electronics Technicians are responsible for electronic equipment used to send and receive messages, detect enemy planes and ships, and determine target distances. They maintain, repair, and calibrate all electronic equipment used for communications, detection tracking, identification, and navigation. Specially qualified Electronics Technicians are employed onboard nuclear-powered ships to operate the nuclear reactor and maintain its control subsystems."
+    "description":"ETs are responsible for electronic equipment used to send and receive messages, detect enemy planes and ships, and determine target distance. They must maintain, repair, calibrate, tune, and adjust electronic equip¬ment used for communications, detection and tracking, recognition and identification, navigation, and electronic countermeasures."
   },
   {
     "title":"Fire Controlman",
     "abbreviation":"FC",
     "branch":"Navy",
-    "description":"Fire Controlmen maintain the control mechanism used in weapons systems on combat ships. Complex electronic, electrical and hydraulic equipment is required to ensure the accuracy of Navy guided-missile and surface gunfire-control systems. They are responsible for the operation, routine care and repair of this equipment, which includes radars, computers, weapons direction equipment, target designation systems, gyroscopes and rangefinders."
+    "description":"FCs maintain the control mech¬anism used in weapons systems on combat ships. Complex electronic, electrical, and hy¬draulic equipment is required to ensure the accuracy of guided-missile and surface gunfire-control systems. FCs are responsible for the operation, routine care, and repair of this equipment, which includes radars, computers, weapons-direction equipment, target-designation systems, gyroscopes, and rangefinders."
   },
   {
     "title":"Fire Control Technician",
     "abbreviation":"FT",
     "branch":"Navy",
-    "description":"Fire Control Technicians maintain the electronic equipment used in submarine weapons systems. They are responsible for the operation and maintenance of the complex electronic, electrical and mechanical equipment required to ensure the accuracy of Navy guided-missile systems and underwater weapons. They are responsible for ship safety by recognizing and analyzing data from several critical systems including sonar, radar, periscope, radio, and torpedo inputs."
+    "description":"FTs maintain ad¬vanced electronic equipment used in submarine weapons systems. Complex electronic, electrical, and mechanical equipment is required to ensure the accuracy of guided-missile systems and underwater weapons. FTs are responsible for the operation, routine care, and repair of this equipment."
   },
   {
     "title":"Gunner's Mate",
     "abbreviation":"GM",
     "branch":"Navy",
-    "description":"Gunner's Mates operate and maintain all gunnery equipment, guided-missile launching systems, rocket launchers, guns, turrets, and associated equipment. They repair electrical, electronic, hydraulic and mechanical systems, and make detailed casualty analysis. They test ammunition, missiles and their ordnance components. GMs train and supervise personnel in the handling and stowage of ammunition, missiles, and assigned ordnance equipment."
+    "description":"Navy GMs operate, maintain, and repair all gunnery equipment, guided-missile launching systems, rocket launchers, guns, gun mounts, turrets, projectors, and associated equipment. They also make detailed casualty analyses and repairs of electrical, electronic, hydraulic, and mechanical systems. They test and inspect ammunition and missiles and their ordnance components, and train and supervise personnel in the handling and stowage of ammunition, missiles, and assigned ordnance equipment."
   },
   {
     "title":"Intelligence Specialist",
     "abbreviation":"IS",
     "branch":"Navy",
-    "description":"Intelligence Specialists are involved in collecting and interpreting intelligence especially secret information about enemies or potential enemies. They analyze photographs and prepare charts, maps, and reports that describe in detail the strategic situation all over the world."
+    "description":"Military information, particularly classified information about enemies or potential enemies, is called \"intelligence.\" Intelligence specialists analyze intelligence data. They break down information to determine its usefulness in military planning. From this intelligence data, they prepare materials that describe in detail the features of strategic and tactical areas all over the world."
   },
   {
     "title":"Information Systems Technician ",
     "abbreviation":"IT",
     "branch":"Navy",
-    "description":"Information Systems Technicians design, install, operate, and maintain state-of-the-art informations systems. This technology includes local and wide area networks, mainframe, mini and microcomputer systems and associated peripheral devices. They also write programs to handle the collection, manipulation and distribution of data for a wide variety of applications and requirements. They perform the functions of a computer system analyst, operate telecommunications systems including automated networks and the full spectrum of data links and circuits."
+    "description":"ITs are responsible for the Navy’s vital command, control, communications, computer and intelligence systems and equipment. They use state-of-the-art multimedia technology such as fiber optics, digital microwave, and satellites on a global basis and work with telecommunications equipment, computers, and associated peripheral devices. (Service Rating: ITS [submarines].)"
   },
   {
     "title":"Legalman",
     "abbreviation":"LN",
     "branch":"Navy",
-    "description":"Legalmen are trained paralegals who assist professionals in the field of law. They work in Navy legal offices, performing administrative and clerical tasks necessary to process claims, conduct court and administrative hearings. They maintain records, documents and legal reference libraries. Legalmen may give advice on tax returns, voter registration procedures, immigration and customs regulations, regulations governing Social Security and veterans' benefits. They perform many duties related to courts-martial and nonjudicial punishment hearings."
+    "description":"Navy LNs are aides trained in the field of law. They work in Navy legal offices performing administrative and clerical tasks necessary to process claims, to conduct court and administrative hearings, and to maintain records, documents, and legal-reference libraries. They give advice on tax returns, voter-registration regulations, procedures, and immigration and customs regulations governing Social Security and veterans’ benefits, and perform many duties related to courts-martial and nonjudicial hearings."
   },
   {
     "title":"Logistics Specialist",
     "abbreviation":"LS",
     "branch":"Navy",
-    "description":"Logistics Specialists manage inventories and issuance of repair parts/general supplies and specialized supplies (e.g., personal flight gear for naval aircrews or specialized combat equipment for Navy SEALs or Naval Military Construction Battalion \"Seabees\"), as well as distribute mail for naval ships, submarines, aviation squadrons, and shore-based activities. They procure, receive, store and issue material and repair selected components. They utilize financial accounting and database systems to perform inventory and financial management functions. Additionally, they sort and distribute all official and personal mail, manage money order and stamp inventories, and maintain financial and inventory reports."
+    "description":"LSs are the Navy’s supply clerks. They see that needed supplies are available, including everything from clothing and machine parts to forms and food. They serve as civilian warehousemen, purchasing agents, stock clerks and supervisors, retail sales clerks, store managers, inventory clerks, buyers, parts clerks, bookkeepers, and even forklift operators. They also provide postal system services for the Navy to ensure an efficient interface between the U.S. Postal Service and the Fleet. "
   },
   {
     "title":"Master-at-Arms",
     "abbreviation":"MA",
     "branch":"Navy",
-    "description":"Masters-at-Arms uphold law and order aboard ships, shore stations, control access to naval installations, and deploy overseas with expeditionary forces and squadrons performing Antiterrorism/Force Protection (AT/FP) duties. The basic duty of an MA is to enforce rules and regulations, maintain good order and discipline, and protect life and property. Some other duties include conducting criminal investigations, personal protective services, take part in correctional and rehabilitative programs, Military Working Dog (MWD) handlers, small arms instruction, lethal and non-lethal weapons training, and organize and train sailors assigned to Shore Patrol police duty. Their equivalents in the civilian world are detectives, security guards, and policemen."
+    "description":"MAs help keep law and order aboard ship and at shore stations. They report to the executive officer, help maintain discipline, and assist in security matters. They enforce regulations, conduct investigations, take part in correctional and rehabilitative programs, and organize and train Sailors assigned to police duty. In civilian life, they would be detectives and policemen."
   },
   {
     "title":"Mass Communication Specialist",
     "abbreviation":"MC",
     "branch":"Navy",
-    "description":"Mass Communication Specialists are public affairs and visual information experts. They present the U.S. Navy story to audiences in the Navy and to the rest of the world through a variety of media. Mass Communication Specialists write and produce print and broadcast journalism, news, and feature stories for military and civilian newspapers, magazines, television and radio broadcast stations. They record still and video photography of military operations, exercises, and other Navy events."
+    "description":"MCs are public affairs and visual information experts.  They present the Navy story to audiences in the Navy and to the rest of the world through a variety of media.  MCs write and produce print and broadcast journalism news and feature stories for military and civilian newspapers, magazines, television, and radio.  They use photography, web design, graphic design, and other related skills in the performance of their duties."
   },
   {
     "title":"Mineman",
     "abbreviation":"MN",
     "branch":"Navy",
-    "description":"Minemen test, maintain, and repair mines and their components. They are responsible for assembling, testing, and delivering mines to the planting agent. They maintain minehandling and minelaying equipment.[5] At sea, Minemen primarily man Avenger Class mine countermeasures ships as well the new Independence Class littoral combat ships as a part of the MCM module. Their duties at sea include but are not limited to: operating mine hunting sonar, operating remote controlled submersibles in prosecuting mine-like contacts, rigging and deploying minesweeping gear as well as standing normal underway deck and Combat Information Center watches."
+    "description":"MNs test, maintain, repair, and overhaul mines and their components. They are re-sponsible for assembling, handling, issuing, and de¬livering mines to the planting agent and for maintaining mine-handling and mine-laying equipment."
   },
   {
     "title":"Missile Technician",
     "abbreviation":"MT",
     "branch":"Navy",
-    "description":"Missile Technicians operate and maintain the UGM-133 Trident II D5 missile Strategic Weapon System (SWS) carried aboard ballistic missile submarines and at Strategic Weapons facilities. Missile Technicians operate and maintain electronic, mechanical, hydraulic and pneumatic Strategic Weapon subsytems, test and operate the MK98 fire-control system and MK 6 guidance system, perform classified targeting operations, and provide physical security to nuclear weapon systems."
+    "description":"MTs perform organizational and intermediate-level maintenance on ballistic missile weapon systems; operate and maintain their fire-control systems, guidance subsystems, and associated test equipment, as well as missile and launcher/tuber groups and all ancillary equipment. They operate and maintain strategic weapons systems, associated ship/weapon subsystems, and test and handling equipment."
   },
   {
     "title":"Musician",
     "abbreviation":"MU",
     "branch":"Navy",
-    "description":"Musicians play in official Navy bands and special groups such as jazz bands, dance bands and small ensembles. They give concerts and provide music for military ceremonies, religious services, parades, receptions and dances. Official unit bands usually do not include stringed instruments, but each musician must be able to play at least one brass, woodwind or percussion instrument. Sailors are selected for this rating through auditions."
+    "description":"MUs play in official Navy bands and in special groups such as jazz bands, dance bands, and small ensembles. They give concerts and provide music for military ceremonies, religious services, parades, receptions, and dances. Official unit bands usually do not include stringed instruments, but each MU must be able to play at least one brass, woodwind, or percussion instrument. Persons are selected for this rating through auditions."
   },
   {
     "title":"Navy Counselor",
     "abbreviation":"NC",
     "branch":"Navy",
-    "description":"Navy Counselors offer vocational guidance to Navy personnel � individually and in groups � aboard ships and at shore facilities. They assess the interests, aptitudes, abilities and personalities of individuals and assist them in reaching their full potential. They are responsible directly to the command triumvirate (CO, XO, CMC) and report on many items such as retention, attrition, advancement, testing and various other facets of the career development program. Additionally, it is their keen eye and attention to detail that ensure personnel throughout the command are updated on current Navy policies in regards to career management, off duty education and administrative procedures, among various other responsibilities."
+    "description":"NCs offer vocational guidance on an individual and group basis to Navy personnel aboard ships and at shore facilities, and to civilian personnel considering enlistment in the Navy. They assess the interests, aptitudes, abilities, and personalities of individuals. An NCR (Navy Counselor Recruiter) focuses on bringing people into the Navy and helps new recruits make early career decisions. NCCs (Navy Career Counselor) primarily work with personnel farther along in their careers, assisting them with such things as furthering their education, converting their ratings, and improving their chances for retention and promotion."
   },
   {
     "title":"Operations Specialist",
     "abbreviation":"OS",
     "branch":"Navy",
-    "description":"Operations Specialists operate radar, navigation and communications equipment in the shipboard combat information centers (CICs) or bridges. They detect and track ships, planes, and missiles. They operate and maintain identification friend or foe (IFF) systems, electronic countermeasures (ECM) equipment and radio-telephones. They control and assist aircraft."
+    "description":"OSs operate radar, navigation, and communications equipment in a ship’s combat information center (CIC) or on the bridge. They detect and track ships, planes, and missiles. They operate and maintain IFF (identification friend or foe) systems, ECM (electronic countermeasures) equipment, and radiotelephones. OSs also work with search-and-rescue teams."
   },
   {
     "title":"Personnel Specialist",
     "abbreviation":"PS",
     "branch":"Navy",
-    "description":"Personnel Specialists provide enlisted personnel with information and counseling about Navy jobs, opportunities for general education and training, and promotion requirements. They assist enlisted members' families with legal aid or reassignments in hardship situations. Personnel Specialists keep records up to date, prepare reports, type letters and maintain files."
+    "description":"Those Sailors in the PS rating provide enlisted personnel with information and counseling related to Navy occupations, opportunities for general education and job training, requirements for promotion, and rights and benefits.  PSs maintain and audit pay and personnel records and determine military pay and travel entitlements.  They prepare financial and accounting reports related to individual pay and travel transactions and operate associated accounting systems.  "
   },
   {
     "title":"Quartermaster",
     "abbreviation":"QM",
     "branch":"Navy",
-    "description":"Quartermasters assist the navigator and officer of the deck (OOD), steer the ship, take radar bearings and ranges, make depth soundings and celestial observations, plot courses and command small craft."
+    "description":"QMs are responsible for ship safety, skillful navigation, and reliable communications with other vessels and shore stations. In addition, they maintain charts, navigational aids, and records for the ship’s log. They steer the ship, take radar bearings and ranges, make depth soundings and celestial observations, plot courses, command small craft, conduct honors and ceremonies with passing ships, maintain signaling equipment, and send and receive visual signals by flashing light, semaphore, and flaghoist. QMs stand watches and assist the navigator and officer of the deck (OOD)."
   },
   {
     "title":"Religious Programs Specialist",
     "abbreviation":"RP",
     "branch":"Navy",
-    "description":"Religious Programs Specialists assist Navy chaplains with administrative and budgetary tasks. They serve as custodians of chapel funds, keep religious documents and stay in contact with religious and community agencies. They prepare devotional and religious educational materials, set up volunteer programs, operate shipboard libraries, supervise chaplains' offices and perform administrative, clerical and secretarial duties. They train personnel in religious programs and publicize religious activities."
+    "description":": RPs assist Navy chaplains with administrative and budgetary tasks. They serve as custodians of chapel funds, keep religious documents, and maintain contact with religious and community agencies. They also prepare devotional and religious educational materials, set up volunteer programs, operate ship¬¬board libraries, supervise chaplains’ offices, and perform administrative, clerical, and secretarial duties. They train personnel in religious programs and publicize religious activities."
   },
   {
     "title":"Special Warfare Boat Operator",
     "abbreviation":"SB",
     "branch":"Navy",
-    "description":"Special Warfare Boat Operators (SWCC - Special Warfare Combatant-Craft Crewmen) drive fast speedboats down narrow, winding rivers, or the open ocean while performing high speed, medium range, or all weather insertion/extraction of Special Operations Forces. They participate in maritime interdiction operations, tactical swimmer operations, intelligence collection, operation deception, and Coastal patrol."
+    "description":"SBs drive a variety of special warfare craft. They support SEALs and other Special Operations Command forces during their maritime and riverine missions, and conduct unconventional small boat operations such as coastal/riverine patrols.  They collect intelligence on enemy military installations in coastal areas, perform parachute/helicopter insertion operations, and support military and civilian law enforcement operations.  "
   },
   {
     "title":"Ship's Serviceman",
     "abbreviation":"SH",
     "branch":"Navy",
-    "description":"Ship's Servicemen manage barber shops, tailor shops, ships' uniform stores, laundries, dry cleaning plants and cobbler shops. They serve as clerks in exchanges, gas stations, warehouses, and commissary stores. Some ship's servicemen function as Navy club managers."
+    "description":"Both ashore and afloat, SHs manage barbershops, tailor shops, ships’ uniform stores, laundries, dry-cleaning plants, and cobbler shops. They serve as clerks in ex¬changes, soda fountains, gas stations, warehouses, and commissary stores. Some SHs function as Navy club managers."
   },
   {
     "title":"Special Warfare Operator",
     "abbreviation":"SO",
     "branch":"Navy",
-    "description":"Special Warfare Operators are Navy SEALs, which are the Navy's primary unconventional warfare units that conduct warfare at SEa, in the Air, and on Land (SEAL). A SEAL's core skills consist of: Sniper, Breacher, Communicator, Maritime/Engineering, Close Air Support, Corpsman, Driver, Navigator (Rural/Urban/Protective Security), Heavy Weapons Operator, Sensitive Site Exploitation, Air Operations (Parachuting/Helicopter Insertion, etc.), Climber, Interrogator, Explosive Ordnance Disposal, Technical Surveillance, and Advanced Special Operations. SEALs oversee ocean-borne mine disposal, carry out direct action raids against military targets, conduct reconnaissance, and secure beachheads for invading amphibious forces."
+    "description":"SOs are better known as SEALs—an acronym from one of their primary missions: conducting insertions/extractions from the sea, air, or land.  SOs also conduct covert, special operations missions in virtually any environment throughout the world, capture high-value enemy personnel and terrorists, collect information and intelligence through special reconnaissance missions, carry out small-unit, direct-action missions against military targets, and conduct underwater reconnaissance and demolition of natural or man-made obstacles prior to amphibious landings."
   },
   {
     "title":"Sonar Technician",
     "abbreviation":"ST",
     "branch":"Navy",
-    "description":"Sonar Technicians are responsible for underwater surveillance. They assist in safe navigation and aid in search and rescue and attack operations. They operate and repair sonar equipment and jam enemy sonars. Sonar Technicians operate, maintain and repair sonar systems, antisubmarine warfare fire control equipment and other various equipment associated with underwater detection, counter-detection, warfare and communications."
+    "description":"STs operate sonar and other oceanographic systems. They manipulate, control, evaluate, and interpret data for surface and submarine operations. STs coordinate submarine and auxiliary sonar and underwater fire-control interface, operate surface-ship under¬water fire-control systems and associated equipment for the solution of antisubmarine warfare problems, and perform organizational and intermediate maintenance on their respective sonar and allied equipment. (Service ratings: STG [surface]; STS [submarine].)"
   },
   {
     "title":"Yeoman",
     "abbreviation":"YN",
     "branch":"Navy",
-    "description":"Yeomen perform Administrative and Clerical work. They deal with visitors, coordinate worldwide travel, submit passport applications, telephone calls and incoming mail, and assist various ships, squadrons, staff commands, and special warfare teams around the world with administrative tasks. They write and type business and social letters, notices, directives, forms and reports."
+    "description":"YNs perform secretarial and clerical work. They greet visitors, answer telephone calls, and receive incoming mail. YNs organize files and operate duplicating equipment, and they order and distribute supplies. They write and type business and social letters, notices, directives, forms, and reports. They maintain files and service records."
   },
   {
     "title":"Damage Controlman",
     "abbreviation":"DC",
     "branch":"Navy",
-    "description":"Damage Controlmen perform the work necessary for damage control, ship stability, fire-fighting. They also prepare defenses against chemical, biological and radiological (CBR) warfare attacks. They instruct personnel in damage control and CBR defense and repair damage-control equipment and systems."
+    "description":"DCs perform the work necessary for damage control, ship stability, firefighting, and chemical, biological, and radiological (CBR) warfare defense. They instruct personnel in damage control and CBR defense, and repair damage-control equipment and ¬systems."
   },
   {
     "title":"Electrician's Mate",
     "abbreviation":"EM",
     "branch":"Navy",
-    "description":"Electrician's Mates are responsible for the operation and repair of a ship's or station's electrical power plant and electrical equipment. They also maintain and repair power and lighting circuits, distribution switchboards, generators, motors and other electrical equipment. Specially qualified Electrician's Mates are employed onboard nuclear-powered ships to maintain the control subsystems in nuclear reactors."
+    "description":"The operation and repair of a ship’s or station’s electrical powerplant and electrical equipment are the responsibilities of EMs. They also maintain and repair power and lighting circuits, distribution switchboards, generators, motors, and other electrical equipment."
   },
   {
     "title":"Engineman",
     "abbreviation":"EN",
     "branch":"Navy",
-    "description":"Enginemen are responsible for internal diesel and gasoline engines. They also maintain refrigeration, air-conditioning, distilling-plant engines and compressors."
+    "description":"Internal-combustion engines, either diesel or gasoline, must be kept in good order; this is the responsibility of ENs. They are also responsible for the maintenance of refrigeration, air-conditioning, and distilling-plant motors and compressors."
   },
   {
     "title":"Gas Turbine System Technician",
     "abbreviation":"GS",
     "branch":"Navy",
-    "description":"Gas Turbine System Technician are responsible for all gas turbine engines. They maintain propulsion machinery, including gears, shafting and controllable pitch propellers, assigned auxiliary equipment propulsion control systems, electrical and electronic circuitry up to the printed circuit module, and alarm and warning circuitry. They handle administrative tasks related to gas turbine propulsion system operation and maintenance."
+    "description":"GSs operate, repair, and maintain gas-turbine engines, main propulsion machinery (including gears, shafting, and controllable-pitch propellers), assigned auxiliary equipment, propulsion-control systems, electrical and electronic circuitry up to printed circuit modules, and alarm and warning circuitry. They perform administrative tasks related to gas-turbine propulsion-system operation and maintenance. (Service ratings: GSE [electrical]; GSM [mechanical].)"
   },
   {
     "title":"Hull Maintenance Technician",
     "abbreviation":"HT",
     "branch":"Navy",
-    "description":"Hull Maintenance Technicians are responsible for maintaining ships' hulls, fittings, piping systems and machinery. They install and maintain all shipboard and shore based plumbing and piping systems. They look after a vessel's safety and survival equipment and perform many tasks related to damage control."
+    "description":"HTs are re¬sponsible for maintaining ships’ hulls, fittings, piping systems, and machinery. They install and maintain shipboard and shore-based plumbing and piping systems. They also look after a vessel’s safety and survival equipment and perform many tasks related to damage control."
   },
   {
     "title":"Interior Communications Electrician",
     "abbreviation":"IC",
     "branch":"Navy",
-    "description":"Interior Communications Electricians operate and repair electronic devices used in the ship's interior communications systems, SITE TV systems, 1MC (public address system), electronic megaphones and other announcing equipment. They are responsible for the gyrocompass systems."
+    "description":"ICs operate and repair electronic devices used in a ship’s interior communications systems—SITE TV systems, public-address systems, electronic megaphones, and other announcing equipment—as well as gyrocompass systems."
   },
   {
     "title":"Machinist's Mate",
     "abbreviation":"MM",
     "branch":"Navy",
-    "description":"Machinist's Mates are responsible for the continuous operation of the many engines, compressors, gears, refrigeration, and air-conditioning equipment along with other types of machinery onboard ships and shore installations. They are responsible for the ship's steam propulsion and auxiliary equipment and the outside (deck) machinery. Specially trained and qualified Machinist's Mates are deployed onboard nuclear-powered ships to maintain the machinery and piping in nuclear reactors.Some nuclear machinists mates (Engineering Laboratory Technicians) receive additional specialization in Health Physics and maintaining reactor chemistry. "
+    "description":"Continuous operation of the many engines, compressors and gears, refrigeration, air-conditioning, gas-operated equipment, and other types of machinery afloat and ashore is the job of the MM. In particular, MMs are responsible for a ship’s steam propulsion and auxiliary equipment and the outside (deck) machinery. MMs may also perform duties in the manufacture, storage, and transfer of some industrial gases.  (Service Ratings: MME (auxiliary); MMN [nuclear]; MMW [weapons].)"
   },
   {
     "title":"Machinery Repairman",
     "abbreviation":"MR",
     "branch":"Navy",
-    "description":"Machinery Repairmen are skilled machine tool operators. They make replacement parts and repair or overhaul a ship's engine auxiliary equipment, such as evaporators, air compressors and pumps. They repair deck equipment, including winches, hoists, condensers, and heat exchange devices. Shipboard Machinery Repairmen frequently operate main propulsion machinery, besides performing machine shop and repair duties."
+    "description":"MRs are skilled machine-tool operators. They make replacement parts and repair or overhaul a ship engine’s auxiliary equipment, such as evaporators, air compressors, and pumps. They repair deck equipment, including winches and hoists, condensers, and heat-exchange devices. Ship¬board MRs frequently operate main propulsion machinery in addition to performing machine-shop and repair duties."
   },
   {
     "title":"Navy Diver",
     "abbreviation":"ND",
     "branch":"Navy",
-    "description":"Navy Divers are responsible for a wide variety of tasks like underwater ship maintenance, construction, explosive ordnance disposal (EOD), and underwater rescue. They are assigned to Naval Special Warfare Units to provide diving technical expertise and supervisory support to all submersible operations."
+    "description":"NDs perform underwater construction, salvage, repair, maintenance, demolition, reconnaissance, and search-and-rescue tasks, using a variety of diving equipment.  They also support Special Warfare and Explosive Ordnance Disposal personnel (see SO and EOD ratings)."
   }
 ]
