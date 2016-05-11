@@ -174,7 +174,6 @@ $(document).ready(function(){
 			screen.lockOrientation('landscape');
 		}
 		catch (e){
-			alert('lock orientation failed to landscape')
 			//$('body').addClass('module-'+currentModule.orientation+'Only');
 		}
 	}
@@ -183,7 +182,6 @@ $(document).ready(function(){
 			screen.lockOrientation('portrait');
 		}
 		catch (e){
-			alert('lock orientation failed to portrait')
 			//$('body').addClass('module-'+currentModule.orientation+'Only');
 		}
 	}
