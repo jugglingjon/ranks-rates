@@ -13,11 +13,18 @@
         Tool created by NETC to aid recruits with distinguishing rates and ranks.
     </description>
 
-    <plugin name="net.yoik.cordova.plugins.screenorientation" spec="1.3.1" source="pgb" />
-
     <author href="http://www.boozallen.com" email="cronin_jonathan@bah.com">
         NETC - Naval Education Training Command
     </author>
+
+    <plugin name="net.yoik.cordova.plugins.screenorientation" spec="1.3.1" source="pgb" />
+
+    <access origin="*"/>
+    <allow-navigation href="*" />
+
+    <preference name="permissions" value="none" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
 
     <icon src="icon.png" />
     <gap:splash src="splash.png" />
@@ -31,7 +38,5 @@
     <!-- iPhone 6 -->
     <gap:splash src="Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
 
-    <preference name="permissions" value="none" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="false" />
+    
 </widget>

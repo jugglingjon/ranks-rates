@@ -172,21 +172,19 @@ $(document).ready(function(){
 	alert($(window).width());
 	if($(window).width()>=768){
 		try{
-			alert('tablet');
 			screen.lockOrientation('landscape');
 		}
 		catch (e){
-			console.log('lock orientation failed')
+			alert('lock orientation failed to landscape')
 			//$('body').addClass('module-'+currentModule.orientation+'Only');
 		}
 	}
 	else{
 		try{
-			alert('phone');
 			screen.lockOrientation('portrait');
 		}
 		catch (e){
-			console.log('lock orientation failed')
+			alert('lock orientation failed to portrait')
 			//$('body').addClass('module-'+currentModule.orientation+'Only');
 		}
 	}
