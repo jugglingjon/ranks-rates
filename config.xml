@@ -13,8 +13,6 @@
         Tool created by NETC to aid recruits with distinguishing rates and ranks.
     </description>
 
-    <plugin name="net.yoik.cordova.plugins.screenorientation" spec="1.3.1" source="pgb" />
-
     <author href="http://www.boozallen.com" email="cronin_jonathan@bah.com">
         NETC - Naval Education Training Command
     </author>
