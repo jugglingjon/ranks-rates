@@ -172,6 +172,7 @@ $(document).ready(function(){
 	alert($(window).width());
 	if($(window).width()>=768){
 		try{
+			alert('tablet');
 			screen.lockOrientation('landscape');
 		}
 		catch (e){
@@ -181,6 +182,7 @@ $(document).ready(function(){
 	}
 	else{
 		try{
+			alert('phone');
 			screen.lockOrientation('portrait');
 		}
 		catch (e){
