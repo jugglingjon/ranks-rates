@@ -169,7 +169,6 @@ function commaScore(val){
 
 
 $(document).ready(function(){
-	alert($(window).width());
 	if($(window).width()>=768){
 		try{
 			screen.lockOrientation('landscape');
