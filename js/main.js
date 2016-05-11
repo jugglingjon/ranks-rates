@@ -1,21 +1,4 @@
-if($(window).width()>=768){
-	try{
-		screen.lockOrientation('landscape');
-	}
-	catch (e){
-		console.log('lock orientation failed')
-		//$('body').addClass('module-'+currentModule.orientation+'Only');
-	}
-}
-else{
-	try{
-		screen.lockOrientation('portrait');
-	}
-	catch (e){
-		console.log('lock orientation failed')
-		//$('body').addClass('module-'+currentModule.orientation+'Only');
-	}
-}
+
 
 //create ranks array
 var ranks;
@@ -186,6 +169,25 @@ function commaScore(val){
 
 
 $(document).ready(function(){
+	console.log($(window).width());
+	if($(window).width()>=768){
+		try{
+			screen.lockOrientation('landscape');
+		}
+		catch (e){
+			console.log('lock orientation failed')
+			//$('body').addClass('module-'+currentModule.orientation+'Only');
+		}
+	}
+	else{
+		try{
+			screen.lockOrientation('portrait');
+		}
+		catch (e){
+			console.log('lock orientation failed')
+			//$('body').addClass('module-'+currentModule.orientation+'Only');
+		}
+	}
 
 	//zendesk if online
 	zE(function() {
