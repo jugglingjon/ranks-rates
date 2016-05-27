@@ -169,16 +169,14 @@ function commaScore(val){
 
 
 $(document).ready(function(){
-	
-	alert('hi');
-	alert(window.plugins.orientationchanger.getOrientation());
 
-		if($(window).width()>=768){
-			window.plugins.orientationchanger.lockOrientation('landscape')
-		}
-		else{
-			window.plugins.orientationchanger.lockOrientation('portrait')
-		}
+	if($(window).width()>=768){
+		screen.lockOrientation('landscape');
+	}
+	else{
+		screen.lockOrientation('portrait');
+	}
+
 
 	//zendesk if online
 	zE(function() {
