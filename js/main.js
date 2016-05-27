@@ -548,7 +548,7 @@ $(document).ready(function(){
 		});
 
 		//click actions for options
-		$('.options a').click(function(){
+		$('body').on('click','.options a:not(.waiting)',function(){
 			
 			//set correct/incorrect response text
 			var responseText='<span class="text-incorrect">Incorrect</span>';
@@ -588,7 +588,8 @@ $(document).ready(function(){
 		
 
 		//animate in options
-		$('.options a').cascadeIn('fadeInDown',function(){
+		$('.options a').addClass('waiting').cascadeIn('fadeInDown',function(){
+			$('.options a').removeClass('waiting');
 			
 			//fade in dial and reset
 			$('#dial').parent().fadeIn();
