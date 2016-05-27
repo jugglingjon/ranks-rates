@@ -169,20 +169,12 @@ function commaScore(val){
 
 
 $(document).ready(function(){
-	if($(window).width()>=768){
-		try{
+	if(screen.lockOrientation){
+		if($(window).width()>=768){
 			screen.lockOrientation('landscape');
 		}
-		catch (e){
-			//$('body').addClass('module-'+currentModule.orientation+'Only');
-		}
-	}
-	else{
-		try{
+		else{
 			screen.lockOrientation('portrait');
-		}
-		catch (e){
-			//$('body').addClass('module-'+currentModule.orientation+'Only');
 		}
 	}
 
