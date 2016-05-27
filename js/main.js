@@ -169,7 +169,10 @@ function commaScore(val){
 
 
 $(document).ready(function(){
+	
+	alert('hi');
 	alert(window.plugins.orientationchanger.getOrientation());
+
 		if($(window).width()>=768){
 			window.plugins.orientationchanger.lockOrientation('landscape')
 		}
