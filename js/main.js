@@ -168,7 +168,10 @@ function commaScore(val){
   }
 
 
-$(document).ready(function(){
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady()
+{
+
 	alert(screen.orientation);
 	alert($(window).width());
 	if($(window).width()>=768){
@@ -177,6 +180,11 @@ $(document).ready(function(){
 	else{
 		screen.lockOrientation('portrait');
 	}
+}
+
+
+$(document).ready(function(){
+	
 
 
 	//zendesk if online
