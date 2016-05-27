@@ -171,9 +171,6 @@ function commaScore(val){
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady()
 {
-
-	alert(screen.orientation);
-	alert($(window).width());
 	if($(window).width()>=768){
 		screen.lockOrientation('landscape');
 	}
