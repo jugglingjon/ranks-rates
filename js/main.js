@@ -54,8 +54,7 @@ var conflicts={
 		"Army":{
 			"Officer":["Collar"]
 		}
-	}
-	,
+	},
 	"Army":{
 		"Navy":{
 			"Officer":["Collar"]
@@ -67,7 +66,7 @@ var conflicts={
 			"Officer":["Collar"]
 		}
 	}
-}
+};
 
 
 //retrieves diffculty settings
@@ -183,7 +182,7 @@ function commaScore(val){
 $(document).ready(function(){
 	
 
-
+	
 	//zendesk if online
 	zE(function() {
 		zE.show();
@@ -696,7 +695,7 @@ $(document).ready(function(){
 						"day":date.day,
 						"month":date.month,
 						"year":date.year
-					}
+					};
 					
 					//if score merits unlocking new max difficulty, unlock and store new max
 					var newMaxDifficulty=1;
