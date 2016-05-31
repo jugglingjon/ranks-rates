@@ -191,9 +191,9 @@ $(document).ready(function(){
 	});
 
 	//disclaimer when new
-	if(!localStorage.newUser){
+	if(!localStorage.newRankUser){
 		$('#disclaimer').modal();
-		localStorage.setItem('newUser','true');
+		localStorage.setItem('newRankUser','true');
 	}
 	else{
 		
