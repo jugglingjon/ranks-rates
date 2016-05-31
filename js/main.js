@@ -168,16 +168,16 @@ function commaScore(val){
   }
 
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady()
-{
-	if($(window).width()>=768){
-		screen.lockOrientation('landscape');
-	}
-	else{
-		screen.lockOrientation('portrait');
-	}
-}
+// document.addEventListener("deviceready", onDeviceReady, false);
+// function onDeviceReady()
+// {
+// 	if($(window).width()>=768){
+// 		screen.lockOrientation('landscape');
+// 	}
+// 	else{
+// 		screen.lockOrientation('portrait');
+// 	}
+// }
 
 
 $(document).ready(function(){
@@ -186,7 +186,7 @@ $(document).ready(function(){
 
 	//zendesk if online
 	zE(function() {
-		zE.hide();
+		//zE.hide();
 		$('.version').append($('<a href="#" onclick="zE.activate({hideOnClose: true});" style="color:white;text-decoration:underline;margin-left:10px;">Feedback</a>'));
 	});
 
