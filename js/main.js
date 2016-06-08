@@ -548,8 +548,8 @@ $(document).ready(function(){
 		});
 
 		//click actions for options
-		$('body').on('click','.options a:not(.waiting)',function(){
-			
+		$('.options a').click(function(e){
+			console.log('click',e,e.target);
 			//set correct/incorrect response text
 			var responseText='<span class="text-incorrect">Incorrect</span>';
 
