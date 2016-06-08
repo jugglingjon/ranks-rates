@@ -15,14 +15,8 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
-        ],
-        "referenceShared": [
-            {
-                "title": "Cover (Female Only)",
-                "image": "Enlisted-cover-shared"
-            }
+            "Shoulder",
+            "Collar"
         ]
     },
     {
@@ -33,14 +27,8 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
-        ],
-        "referenceShared": [
-            {
-                "title": "Cover (Female Only)",
-                "image": "Enlisted-cover-shared"
-            }
+            "Shoulder",
+            "Collar"
         ]
     },
     {
@@ -51,13 +39,17 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
         ],
         "referenceShared": [
             {
                 "title": "Cover (Female Only)",
                 "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO3-Collar"
             }
         ]
     },
@@ -69,13 +61,17 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
         ],
         "referenceShared": [
             {
                 "title": "Cover (Female Only)",
                 "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO2-Collar"
             }
         ]
     },
@@ -87,13 +83,17 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
         ],
         "referenceShared": [
             {
                 "title": "Cover (Female Only)",
                 "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO1-Collar"
             }
         ]
     },
@@ -105,8 +105,8 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
         ],
         "referenceShared": [
             {
@@ -123,8 +123,8 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
         ],
         "referenceShared": [
             {
@@ -204,13 +204,33 @@
         "type": "Enlisted",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
         "quiz": [
-            "Collar",
-            "Shoulder"
+            "Shoulder",
+            "Collar"
+            
         ],
         "referenceShared": [
             {
                 "title": "Cover",
                 "image": "Enlisted-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 1",
+        "grade": "W-1",
+        "abbreviation": "SWO1",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-cover-shared"
             }
         ]
     },
@@ -229,7 +249,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Warrant-cover-shared"
+                "image": "Officer-cover-shared"
             }
         ]
     },
@@ -248,7 +268,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Warrant-cover-shared"
+                "image": "Officer-cover-shared"
             }
         ]
     },
@@ -267,7 +287,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Warrant-cover-shared"
+                "image": "Officer-cover-shared"
             }
         ]
     },
@@ -286,7 +306,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Warrant-cover-shared"
+                "image": "Officer-cover-shared"
             }
         ]
     },
@@ -482,7 +502,7 @@
     },
     {
         "title": "Fleet Admiral",
-        "grade": "O-11",
+        "grade": "",
         "abbreviation": "FADM",
         "branch": "Navy",
         "type": "Officer",
@@ -1457,6 +1477,23 @@
         ]
     },
     {
+        "title": "General of the Air Force",
+        "grade": "",
+        "abbreviation": "GENAF",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
         "title": "Private",
         "grade": "E-1",
         "abbreviation": "PVT",
@@ -1916,6 +1953,23 @@
         "title": "General",
         "grade": "O-10",
         "abbreviation": "GEN",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General of the Army",
+        "grade": "",
+        "abbreviation": "GENA",
         "branch": "Army",
         "type": "Officer",
         "description": "DescriptionText",
