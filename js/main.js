@@ -315,6 +315,13 @@ $(document).ready(function(){
 				//if no insignia, show blank
 				var newInsignia=$('<div><img src="img/blank.png" class="img-responsive"></div>');
 				newInsignia.appendTo('.reference-detail-images');
+
+				if(rank.referenceShared){
+					$.each(rank.referenceShared, function(){
+						var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
+						newInsignia.appendTo('.reference-detail-images');
+					});
+				}
 			}		
 
 			//open modal

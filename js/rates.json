@@ -111,7 +111,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "CPO-Collar"
             }
         ]
     },
@@ -129,7 +129,28 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "SCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Command Senior Chief",
+        "grade": "E-8",
+        "abbreviation": "CSCPO",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "SCPO-Collar"
+            },
+            {
+                "title": "Collar",
+                "image": "SCPO-Collar"
             }
         ]
     },
@@ -146,7 +167,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "MCPO-Collar"
             },
             {
                 "title": "Collar",
@@ -167,7 +188,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "MCPO-Collar"
             },
             {
                 "title": "Collar",
@@ -188,7 +209,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "MCPO-Collar"
             },
             {
                 "title": "Collar",
@@ -211,7 +232,7 @@
         "referenceShared": [
             {
                 "title": "Cover",
-                "image": "Enlisted-cover-shared"
+                "image": "MCPON-Collar"
             }
         ]
     },
@@ -525,7 +546,13 @@
         "abbreviation": "P",
         "branch": "Marines",
         "type": "Enlisted",
-        "description": "DescriptionText"
+        "description": "DescriptionText",
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
     },
     {
         "title": "Private First Class",
