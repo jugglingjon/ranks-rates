@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bah.navyranksapp"
         versionCode = "10" 
-        version     = "1.97" >
+        version     = "1.98" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -44,6 +44,8 @@
     <gap:splash src="splash.png" />
 
     <platform name="ios">
+        
+        <!-- ICONS -->
         <icon src="res/icons/ios/icon-small.png" width="29" height="29" platform="ios"/>
         <icon src="res/icons/ios/icon-small-2x.png" width="58" height="58" platform="ios"/>
         <icon src="res/icons/ios/icon-40.png" width="40" height="40" platform="ios"/>
@@ -59,27 +61,54 @@
         <icon src="res/icons/ios/icon-72-2x.png" width="144" height="144" platform="ios"/>
         <icon src="res/icons/ios/icon-76.png" width="76" height="76" platform="ios"/>
         <icon src="res/icons/ios/icon-76-2x.png" width="152" height="152" platform="ios"/>
+        
+        <!-- PHONE PORTRAIT -->
         <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" platform="ios"/>
         <splash src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" platform="ios"/>
         <splash src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" platform="ios"/>
         <splash src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" platform="ios"/>
         <splash src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" platform="ios"/>
+
+        <!-- PHONE LANDSCAPE -->
+        <splash src="res/screens/ios/screen-iphone-landscape.png" width="480" height="320" platform="ios"/>
+        <splash src="res/screens/ios/screen-iphone-landscape-2x.png" width="960" height="640" platform="ios"/>
+        <splash src="res/screens/ios/screen-iphone-landscape-568h-2x.png" width="1136" height="640" platform="ios"/>
+        <splash src="res/screens/ios/screen-iphone-landscape-667h.png" width="1334" height="750" platform="ios"/>
+        <splash src="res/screens/ios/screen-iphone-landscape-736h.png" width="2208" height="1242" platform="ios"/>
+
+        <!-- TABLET PORTRAIT -->
         <splash src="res/screens/ios/screen-ipad-portrait.png" width="768" height="1024" platform="ios"/>
         <splash src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" platform="ios"/>
+
+        <!-- TABLET LANDSCAPE -->
         <splash src="res/screens/ios/screen-ipad-landscape.png" width="1024" height="768" platform="ios"/>
         <splash src="res/screens/ios/screen-ipad-landscape-2x.png" width="2048" height="1536" platform="ios"/>
     </platform>
+
     <platform name="android">
+        <!-- ICONS -->
         <icon qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" platform="android"/>
         <icon qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" platform="android"/>
         <icon qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" platform="android"/>
         <icon qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" platform="android"/>
         <icon qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" platform="android"/>
         <icon qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" platform="android"/>
-        <splash qualifier="ldpi" src="res/screens/android/screen-ldpi-portrait.png" platform="android"/>
-        <splash qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" platform="android"/>
-        <splash qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" platform="android"/>
-        <splash qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" platform="android"/>
+
+        <!-- PORTRAIT -->
+        <splash qualifier="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" platform="android"/>
+        <splash qualifier="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" platform="android"/>
+        <splash qualifier="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" platform="android"/>
+        <splash qualifier="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" platform="android"/>
+        <splash qualifier="port-xxhdpi" src="res/screens/android/screen-xxhdpi-portrait.png" platform="android"/>
+        <splash qualifier="port-xxxhdpi" src="res/screens/android/screen-xxxhdpi-portrait.png" platform="android"/>
+
+        <!-- LANDSCAPE -->
+        <splash qualifier="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" platform="android"/>
+        <splash qualifier="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" platform="android"/>
+        <splash qualifier="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" platform="android"/>
+        <splash qualifier="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" platform="android"/>
+        <splash qualifier="land-xxhdpi" src="res/screens/android/screen-xxhdpi-landscape.png" platform="android"/>
+        <splash qualifier="land-xxxhdpi" src="res/screens/android/screen-xxxhdpi-landscape.png" platform="android"/>
     </platform>
 
 
