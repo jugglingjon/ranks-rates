@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bah.navyranksapp"
         versionCode = "10" 
-        version     = "1.95" >
+        version     = "1.96" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -40,7 +40,7 @@
     </gap:config-file>
 
 
-
+    <splash src="splash.png" />
 
     <platform name="ios">
         <icon src="res/icons/ios/icon-small.png" width="29" height="29"/>
