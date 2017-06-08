@@ -32,11 +32,11 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
 
-    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+    <gap:config-file parent="UIStatusBarHidden">
         <true/>
     </gap:config-file>
 
-    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+    <gap:config-file parent="UIViewControllerBasedStatusBarAppearance">
         <false/>
     </gap:config-file>
 
