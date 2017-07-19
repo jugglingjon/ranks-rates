@@ -1,4 +1,2016 @@
-
+var ranks=[
+    {
+        "title": "Seaman Recruit",
+        "grade": "E-1",
+        "abbreviation": "SR",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta."
+    },
+    {
+        "title": "Seaman Apprentice",
+        "grade": "E-2",
+        "abbreviation": "SA",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ]
+    },
+    {
+        "title": "Seaman",
+        "grade": "E-3",
+        "abbreviation": "SN",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ]
+    },
+    {
+        "title": "Petty Officer Third Class",
+        "grade": "E-4",
+        "abbreviation": "PO3",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover (Female Only)",
+                "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO3-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Petty Officer Second Class",
+        "grade": "E-5",
+        "abbreviation": "PO2",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover (Female Only)",
+                "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO2-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Petty Officer First Class",
+        "grade": "E-6",
+        "abbreviation": "PO1",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover (Female Only)",
+                "image": "Enlisted-cover-shared"
+            },
+            {
+                "title": "Cover (Male/Female)",
+                "image": "PO1-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Chief Petty Officer",
+        "grade": "E-7",
+        "abbreviation": "CPO",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "CPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Senior Chief Petty Officer",
+        "grade": "E-8",
+        "abbreviation": "SCPO",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "SCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Command Senior Chief",
+        "grade": "E-8",
+        "abbreviation": "CSCPO",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "SCPO-Collar"
+            },
+            {
+                "title": "Collar",
+                "image": "SCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Master Chief Petty Officer",
+        "grade": "E-9",
+        "abbreviation": "MCPO",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "MCPO-Collar"
+            },
+            {
+                "title": "Collar",
+                "image": "MCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Command Master Chief",
+        "grade": "E-9",
+        "abbreviation": "CMC",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "MCPO-Collar"
+            },
+            {
+                "title": "Collar",
+                "image": "MCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Fleet/Force Master Chief",
+        "grade": "E-9",
+        "abbreviation": "FLTCM",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "MCPO-Collar"
+            },
+            {
+                "title": "Collar",
+                "image": "MCPO-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Master Chief Petty Officer of the Navy",
+        "grade": "E-9",
+        "abbreviation": "MCPON",
+        "branch": "Navy",
+        "type": "Enlisted",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+            
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "MCPON-Collar"
+            }
+        ]
+    },
+    {
+        "title": "Warrant Officer 1",
+        "grade": "W-1",
+        "abbreviation": "SWO1",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 2",
+        "grade": "W-2",
+        "abbreviation": "SWO2",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 3",
+        "grade": "W-3",
+        "abbreviation": "SWO3",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 4",
+        "grade": "W-4",
+        "abbreviation": "SWO4",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 5",
+        "grade": "W-5",
+        "abbreviation": "SWO5",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Ensign",
+        "grade": "O-1",
+        "abbreviation": "ENS",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant Junior Grade",
+        "grade": "O-2",
+        "abbreviation": "LTJG",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant",
+        "grade": "O-3",
+        "abbreviation": "LT",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant Commander",
+        "grade": "O-4",
+        "abbreviation": "LCDR",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Commander",
+        "grade": "O-5",
+        "abbreviation": "CDR",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Captain",
+        "grade": "O-6",
+        "abbreviation": "CAPT",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Rear Admiral Lower Half",
+        "grade": "O-7",
+        "abbreviation": "RDML",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Rear Admiral Upper Half",
+        "grade": "O-8",
+        "abbreviation": "RADM",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Vice Admiral",
+        "grade": "O-9",
+        "abbreviation": "VADM",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Admiral",
+        "grade": "O-10",
+        "abbreviation": "ADM",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Fleet Admiral",
+        "grade": "",
+        "abbreviation": "FADM",
+        "branch": "Navy",
+        "type": "Officer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend consequat quam, porttitor mollis ex interdum sed. Curabitur at erat sed augue hendrerit accumsan nec ut leo. Aliquam faucibus vulputate consequat. Vestibulum suscipit ligula vel commodo porta.",
+        "quiz": [
+            "Collar",
+            "Sleeve",
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Officer-cover-shared"
+            }
+        ]
+    },
+    {
+        "title": "Private",
+        "grade": "E-1",
+        "abbreviation": "P",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Private First Class",
+        "grade": "E-2",
+        "abbreviation": "PFC",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lance Corporal",
+        "grade": "E-3",
+        "abbreviation": "LCPL",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Corporal",
+        "grade": "E-4",
+        "abbreviation": "CPL",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant",
+        "grade": "E-5",
+        "abbreviation": "SGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Staff Sergeant",
+        "grade": "E-6",
+        "abbreviation": "SSGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Gunnery Sergeant",
+        "grade": "E-7",
+        "abbreviation": "GYSGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Master Sergeant",
+        "grade": "E-8",
+        "abbreviation": "MSGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Sergeant",
+        "grade": "E-8",
+        "abbreviation": "1STSGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Master Gunnery Sergeant",
+        "grade": "E-9",
+        "abbreviation": "MGYSGT",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant Major",
+        "grade": "E-9",
+        "abbreviation": "SGTMAJ",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant Major of the Marine Corps",
+        "grade": "E-9",
+        "abbreviation": "SMMC",
+        "branch": "Marines",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder",
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Warrant Officer",
+        "grade": "W-1",
+        "abbreviation": "WO",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 2",
+        "grade": "W-2",
+        "abbreviation": "CWO2",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 3",
+        "grade": "W-3",
+        "abbreviation": "CWO3",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 4",
+        "grade": "W-4",
+        "abbreviation": "CWO4",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 5",
+        "grade": "W-5",
+        "abbreviation": "CWO5",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Second Lieutenant",
+        "grade": "O-1",
+        "abbreviation": "2NDLT",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Lieutenant",
+        "grade": "O-2",
+        "abbreviation": "1STLT",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Captain ",
+        "grade": "O-3",
+        "abbreviation": "CAPT",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major",
+        "grade": "O-4",
+        "abbreviation": "MAJ",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant Colonel ",
+        "grade": "O-5",
+        "abbreviation": "LTCOL",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Colonel ",
+        "grade": "O-6",
+        "abbreviation": "COL",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Brigadier General ",
+        "grade": "O-7",
+        "abbreviation": "BGEN",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major General ",
+        "grade": "O-8",
+        "abbreviation": "MAJGEN",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant General ",
+        "grade": "O-9",
+        "abbreviation": "LTGEN",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General",
+        "grade": "O-10",
+        "abbreviation": "GEN",
+        "branch": "Marines",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "marines-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Airman Basic",
+        "grade": "E-1",
+        "abbreviation": "AB",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Airman",
+        "grade": "E-2",
+        "abbreviation": "AMN",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Airman First Class",
+        "grade": "E-3",
+        "abbreviation": "A1C",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Senior Airman",
+        "grade": "E-4",
+        "abbreviation": "SRA",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Staff Sergeant",
+        "grade": "E-5",
+        "abbreviation": "SSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Technical Sergeant",
+        "grade": "E-6",
+        "abbreviation": "TSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Master Sergeant",
+        "grade": "E-7",
+        "abbreviation": "MSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Sergeant (E-7)",
+        "grade": "E-7",
+        "abbreviation": "FS7",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Senior Master Sergeant",
+        "grade": "E-8",
+        "abbreviation": "SMSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Sergeant (E-8)",
+        "grade": "E-8",
+        "abbreviation": "FS8",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Master Sergeant",
+        "grade": "E-9",
+        "abbreviation": "CMSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Sergeant (E-9)",
+        "grade": "E-9",
+        "abbreviation": "FS9",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Command Chief Master Sergeant",
+        "grade": "E-9",
+        "abbreviation": "CCMSGT",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Master Sergeant of the Air Force",
+        "grade": "E-9",
+        "abbreviation": "CMSAF",
+        "branch": "Air Force",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ],
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Second Lieutenant",
+        "grade": "O-1",
+        "abbreviation": "2NDLT",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Lieutenant",
+        "grade": "O-2",
+        "abbreviation": "1STLT",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Captain ",
+        "grade": "O-3",
+        "abbreviation": "CAPT",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major",
+        "grade": "O-4",
+        "abbreviation": "MAJ",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant Colonel ",
+        "grade": "O-5",
+        "abbreviation": "LTCOL",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Colonel ",
+        "grade": "O-6",
+        "abbreviation": "COL",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Brigadier General ",
+        "grade": "O-7",
+        "abbreviation": "BGEN",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major General ",
+        "grade": "O-8",
+        "abbreviation": "MAJGEN",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant General ",
+        "grade": "O-9",
+        "abbreviation": "LTGEN",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General",
+        "grade": "O-10",
+        "abbreviation": "GEN",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General of the Air Force",
+        "grade": "",
+        "abbreviation": "GENAF",
+        "branch": "Air Force",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "airforce-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Private",
+        "grade": "E-1",
+        "abbreviation": "PVT",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Private 2",
+        "grade": "E-2",
+        "abbreviation": "PV2",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Private First Class",
+        "grade": "E-3",
+        "abbreviation": "PFC",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Specialist",
+        "grade": "E-4",
+        "abbreviation": "SPC",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Corporal",
+        "grade": "E-4",
+        "abbreviation": "CPL",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant",
+        "grade": "E-5",
+        "abbreviation": "SGT",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Staff Sergeant",
+        "grade": "E-6",
+        "abbreviation": "SSG",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant First Class",
+        "grade": "E-7",
+        "abbreviation": "SFC",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Master Sergeant",
+        "grade": "E-8",
+        "abbreviation": "MSG",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Sergeant",
+        "grade": "E-8",
+        "abbreviation": "1SG",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant Major",
+        "grade": "E-9",
+        "abbreviation": "SGM",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Command Sergeant Major",
+        "grade": "E-9",
+        "abbreviation": "CSM",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Sergeant Major of the Army",
+        "grade": "E-9",
+        "abbreviation": "SMA",
+        "branch": "Army",
+        "type": "Enlisted",
+        "description": "DescriptionText",
+        "quiz": [
+            "Shoulder"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-enlisted-shared"
+            }
+        ]
+    },
+    {
+        "title": "Warrant Officer",
+        "grade": "W-1",
+        "abbreviation": "WO1",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-Cover-Shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 2",
+        "grade": "W-2",
+        "abbreviation": "CW2",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-Cover-Shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 3",
+        "grade": "W-3",
+        "abbreviation": "CW3",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-Cover-Shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 4",
+        "grade": "W-4",
+        "abbreviation": "CW4",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-Cover-Shared"
+            }
+        ]
+    },
+    {
+        "title": "Chief Warrant Officer 5",
+        "grade": "W-5",
+        "abbreviation": "CW5",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "Warrant-Cover-Shared"
+            }
+        ]
+    },
+    {
+        "title": "Second Lieutenant",
+        "grade": "O-1",
+        "abbreviation": "2NDLT",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "First Lieutenant",
+        "grade": "O-2",
+        "abbreviation": "1STLT",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Captain ",
+        "grade": "O-3",
+        "abbreviation": "CAPT",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major",
+        "grade": "O-4",
+        "abbreviation": "MAJ",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant Colonel ",
+        "grade": "O-5",
+        "abbreviation": "LTCOL",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Colonel ",
+        "grade": "O-6",
+        "abbreviation": "COL",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Brigadier General ",
+        "grade": "O-7",
+        "abbreviation": "BGEN",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Major General ",
+        "grade": "O-8",
+        "abbreviation": "MAJGEN",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "Lieutenant General ",
+        "grade": "O-9",
+        "abbreviation": "LTGEN",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General",
+        "grade": "O-10",
+        "abbreviation": "GEN",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    },
+    {
+        "title": "General of the Army",
+        "grade": "",
+        "abbreviation": "GENA",
+        "branch": "Army",
+        "type": "Officer",
+        "description": "DescriptionText",
+        "quiz": [
+            "Collar"
+        ],
+        "referenceShared": [
+            {
+                "title": "Cover",
+                "image": "army-hat-officer-shared"
+            }
+        ]
+    }
+];
 
 //create ranks array
 var ranks;
@@ -191,7 +2203,7 @@ $(document).ready(function(){
 
 
 	//disclaimer when new
-	if(!localStorage.newRankUser){
+	if(!localStorage.getItem('newRankUser')){
 		$('#disclaimer').modal();
 		localStorage.setItem('newRankUser','true');
 	}
@@ -228,108 +2240,101 @@ $(document).ready(function(){
 	});
 	$('#dial').parent().hide();
 
-	//load ranks from json file, populate reference field
-	$.getJSON('js/rates.json',function(data){
+
+	ranksBackup=ranks;
+
+	//restore difficulty
+	restoreDifficulty();
+
+	//populate ranks field
+	
+
+	$.each(ranksBackup,function(index){
+		this.id=index;
+
+		var imgURL;
+		if(this.quiz){
+			imgURL=this.branch+'/'+this.abbreviation+'-'+this.quiz[0];
+		}
+		else if(this.reference){
+			imgURL=this.branch+'/'+this.abbreviation+'-'+this.reference[0];
+		}
+		else{
+			imgURL='blank';
+		}
+
+		var newRank=$('<a href="#" class="reference-rank type-'+this.type+' branch-'+this.branch+'" data-id="'+this.id+'">'+
+			'<img src="img/'+imgURL+'.png" class="img-responsive">'+
+			'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
+			'<span class="reference-rank-meta reference-rank-meta-type">'+this.type+'<br><span class="reference-rank-meta-grade">'+this.grade+'</span></span>'+
+			'<div class="reference-rank-title">'+
+				this.title+
+			'</div>'+
+		'</a>').appendTo('.reference-field');
+	});
+	$('<div classs="grid-sizer"></div>').appendTo('.reference-field');
+
+	//click action to open modal
+	$('.reference-rank').click(function(){
+		rank=ranksBackup[$(this).attr('data-id')];
+
+		$('.reference-detail-title').text(rank.title);
+		$('.reference-detail-branch').text(rank.branch);
+		$('.reference-detail-type').text(rank.type);
+		$('.reference-detail-grade').text(rank.grade);
+		$('.reference-detail-description').text(rank.description);
+
+		//emtpy image field in refernce detail modal
+		$('.reference-detail-images').empty();
 
 		
 
-		//update ranks variable
-		ranks=data;
-		ranksBackup=ranks;
 
-		//restore difficulty
-		restoreDifficulty();
-
-		//populate ranks field
-		
-
-		$.each(ranksBackup,function(index){
-			this.id=index;
-
-			var imgURL;
-			if(this.quiz){
-				imgURL=this.branch+'/'+this.abbreviation+'-'+this.quiz[0];
-			}
-			else if(this.reference){
-				imgURL=this.branch+'/'+this.abbreviation+'-'+this.reference[0];
+		if(rank.quiz||rank.reference){
+			//merge quiz and reference insignia arrays (if available)
+			var quizPlusReference;
+			if(rank.quiz&&rank.reference){
+				quizPlusReference=$.merge([],rank.quiz);
+				$.merge(quizPlusReference,rank.reference);
+			}	
+			else if(rank.quiz){
+				quizPlusReference=rank.quiz;
 			}
 			else{
-				imgURL='blank';
+				quizPlusReference=rank.reference;
 			}
 
-			var newRank=$('<a href="#" class="reference-rank type-'+this.type+' branch-'+this.branch+'" data-id="'+this.id+'">'+
-				'<img src="img/'+imgURL+'.png" class="img-responsive">'+
-				'<span class="reference-rank-meta reference-rank-meta-branch" data-branch-label="'+this.branch+'">'+this.branch+'</span>'+
-				'<span class="reference-rank-meta reference-rank-meta-type">'+this.type+'<br><span class="reference-rank-meta-grade">'+this.grade+'</span></span>'+
-				'<div class="reference-rank-title">'+
-					this.title+
-				'</div>'+
-			'</a>').appendTo('.reference-field');
-		});
-		$('<div classs="grid-sizer"></div>').appendTo('.reference-field');
-
-		//click action to open modal
-		$('.reference-rank').click(function(){
-			rank=ranksBackup[$(this).attr('data-id')];
-
-			$('.reference-detail-title').text(rank.title);
-			$('.reference-detail-branch').text(rank.branch);
-			$('.reference-detail-type').text(rank.type);
-			$('.reference-detail-grade').text(rank.grade);
-			$('.reference-detail-description').text(rank.description);
-
-			//emtpy image field in refernce detail modal
-			$('.reference-detail-images').empty();
-
+			//insert images into modal
+			$.each(quizPlusReference, function(){
+				var newInsignia=$('<div><img src="img/'+rank.branch+'/'+rank.abbreviation+'-'+this+'.png" class="img-responsive"><span class="insignia-tag">'+this+'</span></div>');
+				newInsignia.appendTo('.reference-detail-images');
+			});
 			
-
-
-			if(rank.quiz||rank.reference){
-				//merge quiz and reference insignia arrays (if available)
-				var quizPlusReference;
-				if(rank.quiz&&rank.reference){
-					quizPlusReference=$.merge([],rank.quiz);
-					$.merge(quizPlusReference,rank.reference);
-				}	
-				else if(rank.quiz){
-					quizPlusReference=rank.quiz;
-				}
-				else{
-					quizPlusReference=rank.reference;
-				}
-
-				//insert images into modal
-				$.each(quizPlusReference, function(){
-					var newInsignia=$('<div><img src="img/'+rank.branch+'/'+rank.abbreviation+'-'+this+'.png" class="img-responsive"><span class="insignia-tag">'+this+'</span></div>');
+			if(rank.referenceShared){
+				$.each(rank.referenceShared, function(){
+					var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
 					newInsignia.appendTo('.reference-detail-images');
 				});
-				
-				if(rank.referenceShared){
-					$.each(rank.referenceShared, function(){
-						var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
-						newInsignia.appendTo('.reference-detail-images');
-					});
-				}
 			}
-			else{
-				//if no insignia, show blank
-				var newInsignia=$('<div><img src="img/blank.png" class="img-responsive"></div>');
-				newInsignia.appendTo('.reference-detail-images');
+		}
+		else{
+			//if no insignia, show blank
+			var newInsignia=$('<div><img src="img/blank.png" class="img-responsive"></div>');
+			newInsignia.appendTo('.reference-detail-images');
 
-				if(rank.referenceShared){
-					$.each(rank.referenceShared, function(){
-						var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
-						newInsignia.appendTo('.reference-detail-images');
-					});
-				}
-			}		
+			if(rank.referenceShared){
+				$.each(rank.referenceShared, function(){
+					var newInsignia=$('<div><img src="img/'+rank.branch+'/'+this.image+'.png" class="img-responsive"><span class="insignia-tag">'+this.title+'</span></div>');
+					newInsignia.appendTo('.reference-detail-images');
+				});
+			}
+		}		
 
-			//open modal
-			$('#reference-detail').modal();
-			return false;
-		});
-		
+		//open modal
+		$('#reference-detail').modal();
+		return false;
 	});
+
 
 
 	//change isotope field basedon filter settings
