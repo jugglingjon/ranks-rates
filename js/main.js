@@ -2085,8 +2085,8 @@ var conflicts={
 function restoreDifficulty(){
 
 	//if difficulty exists in local storage, use that, otherwise start easy
-	if(localStorage.difficulty){
-		setDifficulty(localStorage.difficulty,localStorage.maxDifficulty);
+	if(Cookies.get('difficulty')){
+		setDifficulty(Cookies.get('difficulty'),Cookies.get('maxDifficulty'));
 	}
 	else{
 		setDifficulty(1,1);
@@ -2102,8 +2102,8 @@ function setDifficulty(dif, dmax){
 	//set global difficulty and max available difficulty, store in localstorage
 	difficulty=dif;
 	maxDifficulty=dmax;
-	localStorage.difficulty=dif;
-	localStorage.maxDifficulty=dmax;
+	Cookies.set('difficulty',dif);
+	Cookies.set('maxDifficulty',dmax);
 
 	//set difficulty button states (active and disabled)
 	$('.btn-difficulty').removeClass('setDifficulty disabledDifficulty');
@@ -2203,9 +2203,9 @@ $(document).ready(function(){
 
 
 	//disclaimer when new
-	if(!localStorage.getItem('newRankUser')){
+	if(!Cookies.get('newRankUser')){
 		$('#disclaimer').modal();
-		localStorage.setItem('newRankUser','true');
+		Cookies.set('newRankUser',true);
 	}
 	else{
 		
@@ -2224,7 +2224,7 @@ $(document).ready(function(){
 
 
 	//hide scoreboard if empty
-	if(!localStorage.scores){
+	if(!Cookies.get('scores')){
 		$('[data-to=scoreboard]').hide();
 	}
 
@@ -2657,7 +2657,7 @@ $(document).ready(function(){
 	//build scoreboard
 	$('[data-to=scoreboard]').click(function(){
 		//copy of scores local storage
-		var scores=JSON.parse(localStorage.scores);
+		var scores=JSON.parse(Cookies.get('scores'));
 
 		//comparison sort function for top scores list
 		function compare(a,b) {
@@ -2721,21 +2721,21 @@ $(document).ready(function(){
 
 					if (newMaxDifficulty>parseInt(maxDifficulty)){
 						maxDifficulty=newMaxDifficulty;
-						localStorage.maxDifficulty=maxDifficulty;
+						Cookies.set('maxDifficulty',maxDifficulty);
 					}
 					restoreDifficulty();
 
 					//add to existing localstorage scorebard, or create if empty
-					if(localStorage.scores){
-						var existingScores=localStorage.scores;
+					if(Cookies.get('scores')){
+						var existingScores=Cookies.get('scores');
 						existingScores=JSON.parse(existingScores);
 						existingScores.push(scoreObj);
 						existingScores=JSON.stringify(existingScores);
-						localStorage.scores=existingScores;
+						Cookies.set('scores',existingScores);
 					}
 					else{
 						scoreObj=JSON.stringify([scoreObj]);
-						localStorage.scores=scoreObj;
+						Cookies.set('scores',scoreObj);
 					}
 
 					//show scoreboard link, if hidden because previously empty
